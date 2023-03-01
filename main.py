@@ -86,10 +86,10 @@ if __name__ == '__main__':
     if arg.data == 'chemical-gene':
         in_paths = {
             'dataset': arg.data,
-            'train': './data/FB13/train.tsv',
-            'valid': './data/FB13/dev.tsv',
-            'test': './data/FB13/test.tsv',
-            'text': ['./data/FB13/entity2text.txt', './data/FB13/relation2text.txt']
+            'train': './triples/train.tsv',
+            'valid': './triples/dev.tsv',
+            'test': './triples/test.tsv',
+            'text': ['./triples/entity2text.txt', './triples/relation2text.txt']
         }
 
     lm_config = AutoConfig.from_pretrained(plm_name, cache_dir='./cached_model')
