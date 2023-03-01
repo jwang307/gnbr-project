@@ -149,7 +149,7 @@ class DataSampler(object):
 
 class DataLoader(object):
     def __init__(self, in_paths, tokenizer, batch_size=16, neg_rate=1, add_tokens=False, p_tuning=False, rdrop=False,
-                 model='bert'):
+                 model='bert', descriptions=False):
 
         self.datasetName = in_paths['dataset']
 
@@ -173,8 +173,10 @@ class DataLoader(object):
         self.relation_set = set([t[1] for t in (self.train_set + self.valid_set + self.test_set)])
 
         self.tokenizer = tokenizer
-        for p in in_paths['text']:
-            self.load_text(p)
+        self.descriptions = descriptions
+        if self.descriptions:
+            for p in in_paths['text']:
+                self.load_text(p)
 
         self.batch_size = batch_size
         self.step_per_epc = math.ceil(len(self.train_set) * (1 + neg_rate) / batch_size)
@@ -268,17 +270,16 @@ class DataLoader(object):
         ent2id = self.ent2id
         rel2id = self.rel2id
 
-        if True:
+        h, r, t = triple
+
+        if self.descriptions:
             # 512 tokens, 1 CLS, 1 SEP, 1 head, 1 rel, 1 tail, so 507 remaining.
             h_n_tokens = 241
             t_n_tokens = 241
             r_n_tokens = 16
-
-        h, r, t = triple
-
-        h_text_tokens = self.uid2tokens.get(h, [])[:h_n_tokens] if with_text['h'] else []
-        r_text_tokens = self.uid2tokens.get(r, [])[:r_n_tokens] if with_text['r'] else []
-        t_text_tokens = self.uid2tokens.get(t, [])[:t_n_tokens] if with_text['t'] else []
+            h_text_tokens = self.uid2tokens.get(h, [])[:h_n_tokens] if with_text['h'] else []
+            r_text_tokens = self.uid2tokens.get(r, [])[:r_n_tokens] if with_text['r'] else []
+            t_text_tokens = self.uid2tokens.get(t, [])[:t_n_tokens] if with_text['t'] else []
 
         if self.add_tokens:
             if self.p_tuning:
@@ -300,8 +301,10 @@ class DataLoader(object):
             r_token = ['[CLS]'] if with_text['r'] else [tokenizer.mask_token]
             t_token = ['[CLS]'] if with_text['t'] else [tokenizer.mask_token]
 
-        tokens = h_token + h_text_tokens + r_token + r_text_tokens + t_token + t_text_tokens
-
+        if self.descriptions:
+            tokens = h_token + h_text_tokens + r_token + r_text_tokens + t_token + t_text_tokens
+        else:
+            tokens = h_token + r_token + t_token
         text = tokenizer.convert_tokens_to_string(tokens)
 
         return text, tokens
@@ -313,7 +316,10 @@ class DataLoader(object):
 
         n_tokens = 508
 
-        text_tokens = self.uid2tokens.get(target, [])[:n_tokens]
+        if self.descriptions:
+            text_tokens = self.uid2tokens.get(target, [])[:n_tokens]
+        else:
+            text_tokens = []
 
         if self.add_tokens:
             if target in ent2id.keys():

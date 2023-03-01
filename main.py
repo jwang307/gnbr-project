@@ -52,6 +52,7 @@ if __name__ == '__main__':
     parser.add_argument('--use_structure', default=False, action='store_true')
     parser.add_argument('--contrastive', default=False, action='store_true')
     parser.add_argument('--wandb', default=False, action='store_true')
+    parser.add_argument('--load_descriptions', default=False, action='store_true')
 
     parser.add_argument('--task', default='LP', choices=['LP', 'TC'])
 
@@ -72,6 +73,7 @@ if __name__ == '__main__':
     try:
         device = torch.device('mps')
     except Exception as e:
+        device = torch.device('cpu')
         print(e)
 
     if arg.plm == 'bert':
@@ -95,7 +97,8 @@ if __name__ == '__main__':
     lm_model = AutoModel.from_pretrained(plm_name, config=lm_config, cache_dir='./cached_model')
 
     data_loader = DataLoader(in_paths, lm_tokenizer, batch_size=arg.batch_size, neg_rate=neg_rate,
-                             add_tokens=arg.add_tokens, p_tuning=arg.p_tuning, rdrop=arg.rdrop, model=t_model)
+                             add_tokens=arg.add_tokens, p_tuning=arg.p_tuning, rdrop=arg.rdrop, model=t_model,
+                             descriptions=arg.load_descriptions)
 
     if arg.add_tokens:
         data_loader.adding_tokens()
