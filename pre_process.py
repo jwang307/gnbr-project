@@ -122,3 +122,4 @@ for pair in part_i_and_ii_files:
 
         df = pd.DataFrame(list(set(diseases)), columns=['disease'])
         df.to_csv('./entities/diseases.tsv', sep='\t', index=False)
+
