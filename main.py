@@ -99,37 +99,37 @@ if __name__ == '__main__':
     elif arg.data == 'fb13':
         in_paths = {
             'dataset': arg.data,
-            'train': './sample_lmke_data/data/FB13/train.tsv',
-            'valid': './sample_lmke_data/data/FB13/dev.tsv',
-            'test': './sample_lmke_data/data/FB13/test.tsv',
-            'text': ['./sample_lmke_data/data/FB13/entity2text.txt', './sample_lmke_data/data/FB13/relation2text.txt']
+            'train': './sample_lmke_data/FB13/train.tsv',
+            'valid': './sample_lmke_data/FB13/dev.tsv',
+            'test': './sample_lmke_data/FB13/test.tsv',
+            'text': ['./sample_lmke_data/FB13/entity2text.txt', './sample_lmke_data/FB13/relation2text.txt']
         }
     elif arg.data == 'umls':
         in_paths = {
             'dataset': arg.data,
-            'train': './sample_lmke_data/data/umls/train.tsv',
-            'valid': './sample_lmke_data/data/umls/dev.tsv',
-            'test': './sample_lmke_data/data/umls/test.tsv',
-            'text': ['./sample_lmke_data/data/umls/entity2textlong.txt', './sample_lmke_data/data/umls/relation2text.txt']
+            'train': './sample_lmke_data/umls/train.tsv',
+            'valid': './sample_lmke_data/umls/dev.tsv',
+            'test': './sample_lmke_data/umls/test.tsv',
+            'text': ['./sample_lmke_data/umls/entity2textlong.txt', './sample_lmke_data/umls/relation2text.txt']
         }
     elif arg.data == 'fb15k-237':
         in_paths = {
             'dataset': arg.data,
-            'train': './sample_lmke_data/data/fb15k-237/train.tsv',
-            'valid': './sample_lmke_data/data/fb15k-237/dev.tsv',
-            'test': './sample_lmke_data/data/fb15k-237/test.tsv',
-            'text': ['./sample_lmke_data/data/fb15k-237/FB15k_mid2description.txt', 
-                #'./sample_lmke_data/data/fb15k-237/entity2textlong.txt', 
-                './sample_lmke_data/data/fb15k-237/relation2text.txt']
+            'train': './sample_lmke_data/fb15k-237/train.tsv',
+            'valid': './sample_lmke_data/fb15k-237/dev.tsv',
+            'test': './sample_lmke_data/fb15k-237/test.tsv',
+            'text': ['./sample_lmke_data/fb15k-237/FB15k_mid2description.txt', 
+                #'./sample_lmke_data/fb15k-237/entity2textlong.txt', 
+                './sample_lmke_data/fb15k-237/relation2text.txt']
         }
     elif arg.data == 'wn18rr':
         in_paths = {
             'dataset': arg.data,
-            'train': './sample_lmke_data/data/WN18RR/train.tsv',
-            'valid': './sample_lmke_data/data/WN18RR/dev.tsv',
-            'test': './sample_lmke_data/data/WN18RR/test.tsv',
-            'text': ['./sample_lmke_data/data/WN18RR/my_entity2text.txt', 
-                './sample_lmke_data/data/WN18RR/relation2text.txt']
+            'train': './sample_lmke_data/WN18RR/train.tsv',
+            'valid': './sample_lmke_data/WN18RR/dev.tsv',
+            'test': './sample_lmke_data/WN18RR/test.tsv',
+            'text': ['./sample_lmke_data/WN18RR/my_entity2text.txt', 
+                './sample_lmke_data/WN18RR/relation2text.txt']
         }
 
     lm_config = AutoConfig.from_pretrained(plm_name, cache_dir='./cached_model')
