@@ -98,6 +98,8 @@ for pair in part_i_and_ii_files:
 
         triples = []
 
+        i = 0
+
         for entity1, entity2, path in entities_and_paths:
             theme = path_to_theme[path]
 
@@ -105,11 +107,19 @@ for pair in part_i_and_ii_files:
             if theme not in relation_lookup or relation_lookup[theme] != "treatment":
                 continue
 
+            i += 1
+            if i == 10000:
+                break
+
             triple = (entity1, relation_lookup[theme], entity2)
             triples.append(triple)
             chemicals.append(entity1)
             diseases.append(entity2)
             relations.append(relation_lookup[theme])
+
+        triples = list(set(triples))
+        chemicals = list(set(chemicals))
+        diseases = list(set(diseases))
 
         # Write array to tsv
         df = pd.DataFrame(list(set(triples)), columns=['entity1', 'theme', 'entity2'])
