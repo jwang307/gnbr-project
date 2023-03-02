@@ -1,3 +1,5 @@
+import random
+from collections import defaultdict
 from pathlib import Path
 
 import numpy as np
@@ -92,6 +94,7 @@ for pair in part_i_and_ii_files:
         # TODO: Generalize the following two lines when we have more themes
         chemicals = []
         diseases = []
+        relations = []
 
         triples = []
 
@@ -99,13 +102,14 @@ for pair in part_i_and_ii_files:
             theme = path_to_theme[path]
 
             # Skip these themes for now
-            if theme == "Mp":
+            if theme not in relation_lookup or relation_lookup[theme] != "treatment":
                 continue
 
             triple = (entity1, relation_lookup[theme], entity2)
             triples.append(triple)
             chemicals.append(entity1)
             diseases.append(entity2)
+            relations.append(relation_lookup[theme])
 
         # Write array to tsv
         df = pd.DataFrame(list(set(triples)), columns=['entity1', 'theme', 'entity2'])
@@ -117,9 +121,69 @@ for pair in part_i_and_ii_files:
 
         # TODO: Generalize the following lines when we have more themes
         # Write entities to tsv
-        df = pd.DataFrame(list(set(chemicals)), columns=['chemical'])
+        df = pd.DataFrame(list(set(chemicals)))
         df.to_csv('./entities/chemicals.tsv', sep='\t', index=False)
 
-        df = pd.DataFrame(list(set(diseases)), columns=['disease'])
+        df = pd.DataFrame(list(set(diseases)))
         df.to_csv('./entities/diseases.tsv', sep='\t', index=False)
 
+        # Generate train, valid, test splits
+        train_split = 0.6
+        valid_split = 0.2
+        test_split = 0.2
+
+        train_sample_count = int(len(triples) * train_split)
+        valid_sample_count = int(len(triples) * valid_split)
+        test_sample_count = int(len(triples) * test_split)
+
+        train_triples = []
+        valid_test_eligible_triples = []
+
+        entities_in_train = set()
+
+        random.seed(42)
+        random.shuffle(triples)
+
+        remove_indices = []
+
+        for x in tqdm.tqdm(range(len(triples))):
+            entity1, relation, entity2 = triples[x]
+
+            if entity1 in entities_in_train and entity2 in entities_in_train:
+                continue
+
+            entities_in_train.add(entity1)
+            entities_in_train.add(entity2)
+            train_triples.append((entity1, relation, entity2))
+            remove_indices.append(x)
+
+        # Remove the selected triples
+        for index in tqdm.tqdm(sorted(remove_indices, reverse=True)):
+            del triples[index]
+
+        valid_triples = triples[:valid_sample_count]
+        test_triples = triples[valid_sample_count:valid_sample_count*2]
+
+        train_triples.extend(triples[valid_sample_count*2:])
+
+        # Write the train, valid, test splits to tsv
+        df = pd.DataFrame(train_triples)
+        df.to_csv('./data/train.tsv', sep='\t', index=False, header=False)
+
+        df = pd.DataFrame(valid_triples)
+        df.to_csv('./data/dev.tsv', sep='\t', index=False, header=False)
+
+        df = pd.DataFrame(test_triples)
+        df.to_csv('./data/test.tsv', sep='\t', index=False, header=False)
+        
+        # Write the entities to tsv
+        all_entities = list(set(chemicals)) + list(set(diseases))
+        entities2text = { (c, c.replace("_", " ")) for c in all_entities }
+        df = pd.DataFrame(entities2text)
+        df.to_csv('./data/entity2text.txt', sep='\t', index=False, header=False)
+
+        # Write the relations to tsv
+        all_relations = list(set(relations))
+        relations2text = { (r, r.replace("_", " ")) for r in all_relations }
+        df = pd.DataFrame(relations2text)
+        df.to_csv('./data/relation2text.txt', sep='\t', index=False, header=False)

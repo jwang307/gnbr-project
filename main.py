@@ -91,10 +91,10 @@ if __name__ == '__main__':
     if arg.data == 'chemical-gene':
         in_paths = {
             'dataset': arg.data,
-            'train': './triples/train.tsv',
-            'valid': './triples/dev.tsv',
-            'test': './triples/test.tsv',
-            'text': ['./triples/entity2text.txt', './triples/relation2text.txt']
+            'train': './data/train.tsv',
+            'valid': './data/dev.tsv',
+            'test': './data/test.tsv',
+            'text': ['./data/entity2text.txt', './data/relation2text.txt']
         }
     elif arg.data == 'fb13':
         in_paths = {
