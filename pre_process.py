@@ -98,8 +98,6 @@ for pair in part_i_and_ii_files:
 
         triples = []
 
-        i = 0
-
         for entity1, entity2, path in entities_and_paths:
             theme = path_to_theme[path]
 
