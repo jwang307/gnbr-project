@@ -1,827 +1,827 @@
-inhibited_ear_edema	inhibited ear edema
-milk_fever	milk fever
-PLD	PLD
-Allergic_contact_dermatitis	Allergic contact dermatitis
-leukaemia	leukaemia
-pulmonary_malignancy	pulmonary malignancy
-1,2-diacylglycerol	1,2-diacylglycerol
-prostatic_cancer	prostatic cancer
-glioblastoma	glioblastoma
-tumoral_calcinosis	tumoral calcinosis
-epidermoid_carcinoma	epidermoid carcinoma
-1,2-dioctanoyl-sn-glycerol	1,2-dioctanoyl-sn-glycerol
-131-I-bromsulphalein	131-I-bromsulphalein
-11beta-hydroxysteroid	11beta-hydroxysteroid
-1,25_OH_vitamin_D	1,25 OH vitamin D
-1,2-propanediol	1,2-propanediol
-autoimmune_thyroiditis	autoimmune thyroiditis
-13-cis-RA	13-cis-RA
-Detection_of_breast_disease	Detection of breast disease
-123I-Metaiodobenzylguanidine	123I-Metaiodobenzylguanidine
-1,2-dihexadecylphosphatidylcholine	1,2-dihexadecylphosphatidylcholine
-bladder_cancer	bladder cancer
-advanced_cancer	advanced cancer
-Hypercalcemia	Hypercalcemia
-12-Acetoxyhawtriwaic_acid_lactone	12-Acetoxyhawtriwaic acid lactone
-CRPCs	CRPCs
-alopecia	alopecia
-adenocarcinoma_of_the_endometrium	adenocarcinoma of the endometrium
-10-methylene_tetrahydrofolate	10-methylene tetrahydrofolate
-hepatitis	hepatitis
-malformations	malformations
-Postmenopausal_osteoporosis	Postmenopausal osteoporosis
-pancreatic_insulinoma	pancreatic insulinoma
-12-O-tetradecaoylphorbol-13-acetate	12-O-tetradecaoylphorbol-13-acetate
-1,25-Dihydroxy_vitamin_D3	1,25-Dihydroxy vitamin D3
-postmenopausal_osteoporosis	postmenopausal osteoporosis
-acute_lymphocytic_leukemia	acute lymphocytic leukemia
-11beta-OHD	11beta-OHD
-pituitary_adenomas	pituitary adenomas
-13-cis	13-cis
-idiopathic_hypoparathyroidism	idiopathic hypoparathyroidism
-tumours	tumours
-Colonic_cancer	Colonic cancer
-liver_disease	liver disease
-1,3,6-trinitropyrene	1,3,6-trinitropyrene
-pulmonary_tuberculosis	pulmonary tuberculosis
-1,25_Dihydroxyvitamin_D3	1,25 Dihydroxyvitamin D3
-123I-Tyr3-octreotide	123I-Tyr3-octreotide
-1,25-hydroxyvitamin_D3	1,25-hydroxyvitamin D3
-1,1-dichloroethylene_epoxide	1,1-dichloroethylene epoxide
-chronic_renal_insufficiency	chronic renal insufficiency
-sarcomas	sarcomas
-Renal_cell_tumors	Renal cell tumors
-papillary_meningioma	papillary meningioma
-B-CLL	B-CLL
-promyelocytic_leukemia	promyelocytic leukemia
-11-HOCS	11-HOCS
-oedema	oedema
-DKA	DKA
-reverse_transcriptase	reverse transcriptase
-T2DM	T2DM
-B-PLL	B-PLL
-Lung_injury	Lung injury
-poisoning	poisoning
-secondary_peritonitis	secondary peritonitis
-12-0-tetradecanoyl_phorbol-13-acetate	12-0-tetradecanoyl phorbol-13-acetate
-small_cell_lung_cancer	small cell lung cancer
-hyperglycemia	hyperglycemia
-1,25-OH2D	1,25-OH2D
-type	type
-Chinese_hamster_ovary	Chinese hamster ovary
-1,1-Diphenyl-2-picryl-hydrazyl	1,1-Diphenyl-2-picryl-hydrazyl
-10-EdAM	10-EdAM
-amyloid-beta_and_tau_aggregation	amyloid-beta and tau aggregation
-colitis	colitis
-neural_crest_tumours	neural crest tumours
-1,3,4-thiadiazines	1,3,4-thiadiazines
-Hypertension	Hypertension
-anxiety_disorder	anxiety disorder
-123I-orthoiodohippurate	123I-orthoiodohippurate
-renal_cell_carcinoma	renal cell carcinoma
-123I-ioflupane	123I-ioflupane
-1,10-phenanthroline	1,10-phenanthroline
-1,3-BG	1,3-BG
-1,3-butylen_glycol	1,3-butylen glycol
-111In-SB3	111In-SB3
-unstable_angina	unstable angina
-hereditary_blindness	hereditary blindness
-WS	WS
-epidural_fibrosis	epidural fibrosis
-Cataracts	Cataracts
-congenital_adrenal_hyperplasia	congenital adrenal hyperplasia
-Secondary_hyperparathyroidism	Secondary hyperparathyroidism
-copper_nanoparticles	copper nanoparticles
-allergic_contact_dermatitis	allergic contact dermatitis
-PDB	PDB
-malignant_tumor	malignant tumor
-10-microl	10-microl
-Gliomas	Gliomas
-multibacillary_leprosy	multibacillary leprosy
-sympathetic_nervous_dysfunction	sympathetic nervous dysfunction
-1,1,3,3-Tetramethylguanidine	1,1,3,3-Tetramethylguanidine
-1,2-Diamino-4,5-Dibromobenzene	1,2-Diamino-4,5-Dibromobenzene
-1,2,4-trichlorobenzene	1,2,4-trichlorobenzene
-malignancy	malignancy
-carcinoma	carcinoma
-decreased_hyperplasia	decreased hyperplasia
-pancreatic_loop	pancreatic loop
-11C-sarcosine	11C-sarcosine
-11C-AC	11C-AC
-inflammatory_myofibroblastic_tumour	inflammatory myofibroblastic tumour
-1,25-DHCC	1,25-DHCC
-10-propargyl-5,8-dideazafolate	10-propargyl-5,8-dideazafolate
-intracranial_tumors	intracranial tumors
-atherosclerotic_plaque	atherosclerotic plaque
-colorectal_tumours	colorectal tumours
-Occupational_hand_dermatitis	Occupational hand dermatitis
-123I-IMP	123I-IMP
-calvarial_osteoblasts	calvarial osteoblasts
-mitochondrial_myopathy	mitochondrial myopathy
-SAMs	SAMs
-antigen-presenting_cells	antigen-presenting cells
-sister_chromatid_exchanges	sister chromatid exchanges
-11-hydroxycorticosteroid	11-hydroxycorticosteroid
-1,3,5-trioxetanetrione	1,3,5-trioxetanetrione
-IP	IP
-1,2,3,4,6-penta-O-galloyl-beta-D-glucopyranoside	1,2,3,4,6-penta-O-galloyl-beta-D-glucopyranoside
-1,2_DOG	1,2 DOG
-12-epoxyeicosatrienoic_acid	12-epoxyeicosatrienoic acid
-chronic_renal_failure	chronic renal failure
-leukemic_blasts	leukemic blasts
-Chronic_kidney_disease	Chronic kidney disease
-1,2-dichlorohexafluorocyclobutane	1,2-dichlorohexafluorocyclobutane
-13ASA	13ASA
-1,2-dimethylhydrasine	1,2-dimethylhydrasine
-cerebral_infarction	cerebral infarction
-brain_tumors	brain tumors
-obesity	obesity
-Autonomic_nervous_dysfunction	Autonomic nervous dysfunction
-switchable_polarity_solvents	switchable polarity solvents
-hypercalcemia	hypercalcemia
-11b-hydroxysteroid	11b-hydroxysteroid
-1,2-Diacylglycerol	1,2-Diacylglycerol
-metastatic_tumor	metastatic tumor
-12-0-tetradecanoylphorbol-13-acetate	12-0-tetradecanoylphorbol-13-acetate
-HHT	HHT
-1,2,3,4-tetrahydro-1-acridone	1,2,3,4-tetrahydro-1-acridone
-12-O-tetradecanoylphorbol_13-acetate	12-O-tetradecanoylphorbol 13-acetate
-necrosis	necrosis
-Multiple_colorectal_adenocarcinomas	Multiple colorectal adenocarcinomas
-carcinogenesis	carcinogenesis
-111In-pentetreotide	111In-pentetreotide
-BL	BL
-12-O-tetra-decanoylphorbol-13-acetate	12-O-tetra-decanoylphorbol-13-acetate
-sickle-cell_disease	sickle-cell disease
-toxic_goiter	toxic goiter
-fibrosis	fibrosis
-HHD	HHD
-gastroesophageal_reflux	gastroesophageal reflux
-123I-Iomazenil	123I-Iomazenil
-WT	WT
-hypertension	hypertension
-intra-abdominal_candidiasis	intra-abdominal candidiasis
-1,2,6-IP3	1,2,6-IP3
-13C-glucose	13C-glucose
-gastrointestinal_cancer	gastrointestinal cancer
-melanoma_C-32_and_breast_cancer	melanoma C-32 and breast cancer
-1,25-vitamin_D3	1,25-vitamin D3
-1,2-sn-DAG	1,2-sn-DAG
-11C-choline	11C-choline
-1,24,25-trihydroxyvitamin_D3	1,24,25-trihydroxyvitamin D3
-11_beta-hydroxysteroid	11 beta-hydroxysteroid
-secondary_hyperparathyroidism	secondary hyperparathyroidism
-1,1-difluoroethane	1,1-difluoroethane
-epilepsy	epilepsy
-1,2,6-Tri-O-galloyl-beta-D-glucopyranose	1,2,6-Tri-O-galloyl-beta-D-glucopyranose
-AML	AML
-paralysis	paralysis
-glioma	glioma
-acute_myocardial_infarction	acute myocardial infarction
-1,2,3-triazoles	1,2,3-triazoles
-colon_cancer	colon cancer
-MTC	MTC
-osteogenic_sarcoma	osteogenic sarcoma
-cord_paralysis	cord paralysis
-thyroid_cancer	thyroid cancer
-irritant_contact_dermatitis	irritant contact dermatitis
-10-EDAM	10-EDAM
-11-dehydro-CS	11-dehydro-CS
-13C-galactose	13C-galactose
-131Iodine	131Iodine
-13-acetate	13-acetate
-lung_tumors	lung tumors
-13C-acid	13C-acid
-GS	GS
-atopic_dermatitis	atopic dermatitis
-13762A	13762A
-differentiated_thyroid_cancer	differentiated thyroid cancer
-renal_insufficiency	renal insufficiency
-10-deoxy-10-C-morpholinoethyl	10-deoxy-10-C-morpholinoethyl
-hypertrophic_cardiomyopathy	hypertrophic cardiomyopathy
-Tumors	Tumors
-11C-methionine	11C-methionine
-renal_damage	renal damage
-1,1-disubstituted_olefin	1,1-disubstituted olefin
-non-small-cell_lung_cancer	non-small-cell lung cancer
-12-O-Tetradecanolylphorbol-13-acetate	12-O-Tetradecanolylphorbol-13-acetate
-fatigue	fatigue
-adrenocortical_hyperfunction	adrenocortical hyperfunction
-1,2:5,6-dianhydrogalactitol	1,2:5,6-dianhydrogalactitol
-panic_disorder	panic disorder
-12-tetradecanoylphorbol-13-acetate	12-tetradecanoylphorbol-13-acetate
-DCCHDs	DCCHDs
-12-O-tetradecanoyl-phorbol-13_acetate	12-O-tetradecanoyl-phorbol-13 acetate
-1,2-dihydroxyvitamin_D	1,2-dihydroxyvitamin D
-11C-MET	11C-MET
-1,1-dichloro-2-propanone	1,1-dichloro-2-propanone
-1242-MG	1242-MG
-localized_prostate_cancer	localized prostate cancer
-1,1-diphenyl-2-picrylhydrazyl	1,1-diphenyl-2-picrylhydrazyl
-adrenal_metastases	adrenal metastases
-111In-octreotide	111In-octreotide
-hypophosphatemia	hypophosphatemia
-11C-ACPC	11C-ACPC
-leptomeningeal_metastases	leptomeningeal metastases
-MCF-7_and_MDA-MB-231_breast_cancer	MCF-7 and MDA-MB-231 breast cancer
-malignant_pheochromocytoma	malignant pheochromocytoma
-1,2-dithiole-3-thiones	1,2-dithiole-3-thiones
-11-oxygenated-C19_androgens	11-oxygenated-C19 androgens
-BSE	BSE
-adenovirus_type_5-infected	adenovirus type 5-infected
-megakaryoblastic_leukemia	megakaryoblastic leukemia
-Macrocytic-megaloblastic_anemia	Macrocytic-megaloblastic anemia
-1,2-dimethyl-3-hydroxypyrid-4-one	1,2-dimethyl-3-hydroxypyrid-4-one
-temporal_lobe_epilepsy	temporal lobe epilepsy
-1,3,4-thiadiazine	1,3,4-thiadiazine
-1,2-NQ	1,2-NQ
-pineoblastomas	pineoblastomas
-acromegaly	acromegaly
-ATL	ATL
-1,25-dihydroxyvitamin_D3	1,25-dihydroxyvitamin D3
-accidental_hypothermia	accidental hypothermia
-12-O-tetradecanoylphorbol-13-acetate	12-O-tetradecanoylphorbol-13-acetate
-Bacterial_Infections	Bacterial Infections
-thyroid_carcinoma	thyroid carcinoma
-malignant_gliomas	malignant gliomas
-10B-BPA	10B-BPA
-BD	BD
-1,2,4-trimethyl_benzene	1,2,4-trimethyl benzene
-cytotoxicity	cytotoxicity
-Alzheimer_disease	Alzheimer disease
-11a-O-benzoyl-12b-O-acetyltenacigenin_B	11a-O-benzoyl-12b-O-acetyltenacigenin B
-123I-betamethyl-p-iodophenyl-pentadecanoic_acid	123I-betamethyl-p-iodophenyl-pentadecanoic acid
-108/124	108/124
-aldosterone_deficiency	aldosterone deficiency
-dementia	dementia
-metastasis	metastasis
-131I-6beta-iodomethyl-19-norcholesterol	131I-6beta-iodomethyl-19-norcholesterol
-12-O-tetradecanoylphorbol13-acetate	12-O-tetradecanoylphorbol13-acetate
-promyelocytic_leukaemia	promyelocytic leukaemia
-123I-Tyr-3-octreotide	123I-Tyr-3-octreotide
-12-oxo-phytodienoic_acid	12-oxo-phytodienoic acid
-12a-hydroxyrotenone	12a-hydroxyrotenone
-hypertensive	hypertensive
-self-assembled_monolayers	self-assembled monolayers
-12-O-tetradecanoyl_phorbol_13-acetate	12-O-tetradecanoyl phorbol 13-acetate
-1,25_dihydroxy_vitamin_D3	1,25 dihydroxy vitamin D3
-123I-BMIPP	123I-BMIPP
-1-14C_linoleic_acid	1-14C linoleic acid
-071031B	071031B
-pancreatitis	pancreatitis
-early_failure	early failure
-123I-5-IA-85380	123I-5-IA-85380
-oral_squamous_carcinoma	oral squamous carcinoma
-1,10-phenantroline	1,10-phenantroline
-lung_carcinoma	lung carcinoma
-non-lymphoid_leukemia	non-lymphoid leukemia
-Primary_ovarian_insufficiency	Primary ovarian insufficiency
-protozoan_Crithidia_fasciculata	protozoan Crithidia fasciculata
-Protein_kinase_C	Protein kinase C
-123I-IMZ	123I-IMZ
-HOL	HOL
-13-cis_RA	13-cis RA
-137Cs_burden	137Cs burden
-13-azaprostanoic_acid	13-azaprostanoic acid
-colorectal_carcinoma	colorectal carcinoma
-neuroendocrine_tumors	neuroendocrine tumors
-1,25-dihydroxycholecalciferol	1,25-dihydroxycholecalciferol
-melanoma	melanoma
-1,2-epoxy-3-butene	1,2-epoxy-3-butene
-11b-hydroxylase_deficiency	11b-hydroxylase deficiency
-1,2,4-triazole	1,2,4-triazole
-pulmonary_injury	pulmonary injury
-Pancreatic_Cancer	Pancreatic Cancer
-brain_tumor	brain tumor
-pheochromocytomas_and_paragangliomas	pheochromocytomas and paragangliomas
-125I-iothalamate	125I-iothalamate
-1,2-dihydroxybenzene	1,2-dihydroxybenzene
-CRC	CRC
-DDD	DDD
-KD	KD
-psoriasis	psoriasis
-cardiac_hypertrophy	cardiac hypertrophy
-protein_kinase_C	protein kinase C
-LCA	LCA
-rickets	rickets
-10-Oxa-5,8-dideazafolic_acid	10-Oxa-5,8-dideazafolic acid
-13C-caffeine	13C-caffeine
-melanoma_tumor	melanoma tumor
-gastric_cancer	gastric cancer
-131_I-metaiodobenzylguanidine	131 I-metaiodobenzylguanidine
-1.2-diacylglycerol	1.2-diacylglycerol
-1,1,1,3,3-Pentafluoropropane	1,1,1,3,3-Pentafluoropropane
-vesicle_aggregation	vesicle aggregation
-malignant_epithelial_and_mesenchymal_skin_tumors	malignant epithelial and mesenchymal skin tumors
-chronic_kidney_disease	chronic kidney disease
-brain_injury	brain injury
-129Cs	129Cs
-acute_promyelocytic_leukemia	acute promyelocytic leukemia
-neuroblastoma	neuroblastoma
-prolactinomas	prolactinomas
-essential_and_renovascular_hypertension	essential and renovascular hypertension
-11C-Met	11C-Met
-12-O-tetradecanoyl-phorbol_13-acetate	12-O-tetradecanoyl-phorbol 13-acetate
-ischemic	ischemic
-platelet_aggregation	platelet aggregation
-myelodysplastic_syndromes	myelodysplastic syndromes
-heart_failure	heart failure
-colon_cancers	colon cancers
-NSCLC	NSCLC
-Tic	Tic
-CKD	CKD
-12-o-tetradecanoyl_phorbol-13-acetate	12-o-tetradecanoyl phorbol-13-acetate
-hypoparathyroidism	hypoparathyroidism
-gastric_emptying	gastric emptying
-1,1-dichlorodiphenildichloroethane	1,1-dichlorodiphenildichloroethane
-amenorrhea	amenorrhea
-13_cis-retinoic_acid	13 cis-retinoic acid
-125I	125I
-hyperplasia	hyperplasia
-myocardial_ischemia	myocardial ischemia
-CS	CS
-1,2-Dimethylhydrazine	1,2-Dimethylhydrazine
-experimental_autoimmune_encephalomyelitis	experimental autoimmune encephalomyelitis
-11-deoxyprostaglandin_E1	11-deoxyprostaglandin E1
-increase_in_the_number_of_osteoclastlike_cells	increase in the number of osteoclastlike cells
-PHA	PHA
-lymph_node_tuberculosis	lymph node tuberculosis
-MCF	MCF
-asthma	asthma
-1,2,3,6-methyl-phenyl-tetrahydropyridine	1,2,3,6-methyl-phenyl-tetrahydropyridine
-Intestinal_carcinoma	Intestinal carcinoma
-Yoshida_sarcoma	Yoshida sarcoma
-12-O-tetradecanoylphorbol_acetate	12-O-tetradecanoylphorbol acetate
-retinoblastoma	retinoblastoma
-osteosarcoma	osteosarcoma
-tumor_hypoxia	tumor hypoxia
-125I-iododeoxyuridine	125I-iododeoxyuridine
-SE	SE
-inherited_disease	inherited disease
-125Iodine	125Iodine
-1,2,3,4,6-penta-O-galloyl-b-d-glucopyranose	1,2,3,4,6-penta-O-galloyl-b-d-glucopyranose
-12-o-tetradecanoyl_phorbol_13-acetate	12-o-tetradecanoyl phorbol 13-acetate
-1,2-dichloropropane	1,2-dichloropropane
-13C-Hiolein	13C-Hiolein
-12-HETE	12-HETE
-parturient_paresis	parturient paresis
-pigment_dispersion	pigment dispersion
-IHCP	IHCP
-1,25-D3	1,25-D3
-head_louse_infestation	head louse infestation
-hepatic_encephalopathy	hepatic encephalopathy
-12-0-tetradecanoyl-phorbol-13-acetate	12-0-tetradecanoyl-phorbol-13-acetate
-occlusive_cerebrovascular_disease	occlusive cerebrovascular disease
-colon_tumors	colon tumors
-heat_shock	heat shock
-1,25-hydroxyvitamin_D	1,25-hydroxyvitamin D
-granuloma	granuloma
-chronic_obstructive_pulmonary_disease	chronic obstructive pulmonary disease
-X-linked_hypophosphatemia	X-linked hypophosphatemia
-heart_diseases	heart diseases
-1-13C_pyruvate	1-13C pyruvate
-12,13-epoxyoctadecenoic_acid	12,13-epoxyoctadecenoic acid
-12-O-tetradecanoylphobol_13-acetate	12-O-tetradecanoylphobol 13-acetate
-11-methyl-17-ketone	11-methyl-17-ketone
-1,2-dithiole-3-thione	1,2-dithiole-3-thione
-papillomas	papillomas
-13bHCl	13bHCl
-1,3-b-D-glucan	1,3-b-D-glucan
-breast_cancer	breast cancer
-1,2_dimethylhydrazine	1,2 dimethylhydrazine
-10-ethyl-10-deazaaminopterin	10-ethyl-10-deazaaminopterin
-1,3-Butanediol	1,3-Butanediol
-111In-DTPA-peptide-biotin	111In-DTPA-peptide-biotin
-asbestos	asbestos
-familial_amyloid_polyneuropathy_type_I	familial amyloid polyneuropathy type I
-123I-labeled_metaiodobenzylguanidine	123I-labeled metaiodobenzylguanidine
-adenocarcinoma_of_the_prostate	adenocarcinoma of the prostate
-11b-Hydroxysteroid	11b-Hydroxysteroid
-11Beta-hydroxysteroid	11Beta-hydroxysteroid
-11C	11C
-10-Hydroxy-2-decenoic_acid	10-Hydroxy-2-decenoic acid
-OA	OA
-hyperalgesia	hyperalgesia
-12-hydroxyheptadecatrienoate	12-hydroxyheptadecatrienoate
-Cardiovascular_symptoms	Cardiovascular symptoms
-carcinoma_of_the_prostate	carcinoma of the prostate
-HCC	HCC
-impaired_glucose_tolerance	impaired glucose tolerance
-11-Beta	11-Beta
-10-Hydroxycamptothecin	10-Hydroxycamptothecin
-12,13-epoxytrichothecenes	12,13-epoxytrichothecenes
-basal_ganglia_germinoma	basal ganglia germinoma
-Cancer	Cancer
-12-methyltridecanal	12-methyltridecanal
-10-HCPT	10-HCPT
-brain_infarction	brain infarction
-myocardial_sympathetic_dysfunction	myocardial sympathetic dysfunction
-Osteopenia	Osteopenia
-1,2-dioleoyl-3-trimethylammonium-propane	1,2-dioleoyl-3-trimethylammonium-propane
-embryonic_day	embryonic day
-12-DHGD	12-DHGD
-13C	13C
-1,2-benzisothiazolin-3-one	1,2-benzisothiazolin-3-one
-1,1,1-trichloroethane	1,1,1-trichloroethane
-pancreatic_cancer	pancreatic cancer
-10-MDP	10-MDP
-13,14-dihydro-15-keto-PGE2	13,14-dihydro-15-keto-PGE2
-metastases	metastases
-1,2-benzopyrone	1,2-benzopyrone
-primary_hyperparathyroidism	primary hyperparathyroidism
-1,1-Dichloroethylene	1,1-Dichloroethylene
-ischemia	ischemia
-1,3,6,7-tetrahydroxy-8-prenylxanthone	1,3,6,7-tetrahydroxy-8-prenylxanthone
-intracranial_tuberculomas	intracranial tuberculomas
-skin_tumor	skin tumor
-10-gingerol	10-gingerol
-111-indium-octreotide	111-indium-octreotide
-diabetic_nephropathy	diabetic nephropathy
-NPC	NPC
-11C-N-methylspiperone	11C-N-methylspiperone
-1,2-dimethylhydrazine_dihydrochloride	1,2-dimethylhydrazine dihydrochloride
-trickle-bed_air_biofilter	trickle-bed air biofilter
-hypoxia	hypoxia
-Liver_disease	Liver disease
-hepatoma	hepatoma
 111indium-DTPA	111indium-DTPA
-124-amino-acid	124-amino-acid
-clonal_osteoblast-like_rat_osteogenic_sarcoma	clonal osteoblast-like rat osteogenic sarcoma
-vascular_neoplasms	vascular neoplasms
-hypothyroidism	hypothyroidism
-diabetes	diabetes
-PD	PD
-1,2-DCE	1,2-DCE
-skin_lesions	skin lesions
-11-oxycorticoids	11-oxycorticoids
-10-ethyl-10-deaza-aminopterin	10-ethyl-10-deaza-aminopterin
-dilated_cardiomyopathy	dilated cardiomyopathy
-ketonemia	ketonemia
-13-cis_retinoic_acid	13-cis retinoic acid
-111In-Pentetreotide	111In-Pentetreotide
-cold_allodynia	cold allodynia
-squamous_cell_carcinoma	squamous cell carcinoma
-1,25-Dihydroxycholecalciferol	1,25-Dihydroxycholecalciferol
-1,2-Dibromoethane	1,2-Dibromoethane
-cancers	cancers
-123I-heptadecanoic_acid	123I-heptadecanoic acid
-phaeochromocytomas_and_paragangliomas	phaeochromocytomas and paragangliomas
-1,3-benzodioxoles	1,3-benzodioxoles
-small-cell_lung_cancer	small-cell lung cancer
-acute_myeloid_leukemia	acute myeloid leukemia
-toxicosis	toxicosis
-EBV	EBV
-11,12-epoxyeicosatrienoic_acid	11,12-epoxyeicosatrienoic acid
-125-iodine	125-iodine
-fragmentation	fragmentation
-SCLC	SCLC
-tumour	tumour
-12-0-tetradecanoyl_phorbol_13_acetate	12-0-tetradecanoyl phorbol 13 acetate
-cerebral_ischemia	cerebral ischemia
-12-hydroxyeicosatetraenoic_acid	12-hydroxyeicosatetraenoic acid
-12-MTA	12-MTA
-thalassemia	thalassemia
-diabetic_retinas	diabetic retinas
-10-Cl-BBQ	10-Cl-BBQ
-Ovarian_cancer	Ovarian cancer
-123I-Iolopride	123I-Iolopride
-ACF	ACF
-bone_loss	bone loss
-Toxic_dermatitis	Toxic dermatitis
-1,2-sn-Diacylglycerols	1,2-sn-Diacylglycerols
-Subchronic_toxicity	Subchronic toxicity
-chest_pain	chest pain
-123I-15-iodophenyl_3-methyl_pentadecanoic_acid	123I-15-iodophenyl 3-methyl pentadecanoic acid
-cortisone_reductase_deficiency	cortisone reductase deficiency
-atherosclerosis	atherosclerosis
-neuro-inflammation	neuro-inflammation
-impaired_renal_function	impaired renal function
-vascular_injury	vascular injury
-12-methacryloyloxydodecylpyridinium_bromide	12-methacryloyloxydodecylpyridinium bromide
-111Indium_pentetreotide	111Indium pentetreotide
-111-indium_DTPA_octreotide	111-indium DTPA octreotide
-idiopathic_dilated_cardiomyopathy	idiopathic dilated cardiomyopathy
-Hyperplasia	Hyperplasia
-11-deoxycortisol	11-deoxycortisol
-111In-Octreotide	111In-Octreotide
-intestinal_carcinoids	intestinal carcinoids
-1,1,2-trisubstituted-1H-indenes	1,1,2-trisubstituted-1H-indenes
-pulmonary_hypertension	pulmonary hypertension
-123I-Meta-Iodobenzylguanidine	123I-Meta-Iodobenzylguanidine
-123I-MIBG	123I-MIBG
-1,2-dipalmitoyl-sn-glycero-3-phosphoethanolamine	1,2-dipalmitoyl-sn-glycero-3-phosphoethanolamine
-1,2,3,4-butanetetracarboxylic_acid	1,2,3,4-butanetetracarboxylic acid
-1,25-dihydroxy-vitamin_D3	1,25-dihydroxy-vitamin D3
-11-keto-b-boswellic_acid	11-keto-b-boswellic acid
-islet-cell_tumors	islet-cell tumors
-lymphomas_of_T-lineage	lymphomas of T-lineage
-Burkitt_lymphoma	Burkitt lymphoma
-1,25_dihydroxyvitamin_D3	1,25 dihydroxyvitamin D3
-antioxidant_activity	antioxidant activity
-pulmonary_aspergilloma	pulmonary aspergilloma
-energy_metabolic_disorder	energy metabolic disorder
-1,25-Dihydroxyvitamin_D	1,25-Dihydroxyvitamin D
-renal_and_urinary_disorders	renal and urinary disorders
-123I-metaiodobenzylguanidine	123I-metaiodobenzylguanidine
-12-O-tetradecanoly_Phorbol-13-acetate	12-O-tetradecanoly Phorbol-13-acetate
-13,14-Dihydro-15-keto_prostaglandin_F2_alpha	13,14-Dihydro-15-keto prostaglandin F2 alpha
-1,2-octanediol	1,2-octanediol
-acute_nonlymphocytic_leukemia	acute nonlymphocytic leukemia
-11OHD	11OHD
-congenital_osteopetrosis	congenital osteopetrosis
-13C-aminopyrine	13C-aminopyrine
-Hypothyroidism	Hypothyroidism
-hypersensitivity	hypersensitivity
-123I_metaiodobenzylguanidine	123I metaiodobenzylguanidine
-myocardium	myocardium
-1,25-dihydroxyvitamin_D	1,25-dihydroxyvitamin D
-12-O-tetradecanoyl-13-phorbol_acetate	12-O-tetradecanoyl-13-phorbol acetate
-11-hydroxycorticosteroids	11-hydroxycorticosteroids
-amnesia	amnesia
-incomplete_bladder_emptying	incomplete bladder emptying
-Cervical_Lesions	Cervical Lesions
-colorectal_liver_metastases	colorectal liver metastases
+heart_diseases	heart diseases
+125I-iododeoxyuridine	125I-iododeoxyuridine
+123I-betamethyl-p-iodophenyl-pentadecanoic_acid	123I-betamethyl-p-iodophenyl-pentadecanoic acid
+carcinogenesis	carcinogenesis
+10-microl	10-microl
+impaired_glucose_tolerance	impaired glucose tolerance
 human_immunodeficiency_virus	human immunodeficiency virus
-hip_fracture	hip fracture
-PDAC	PDAC
-Dementia	Dementia
-colon_carcinoma	colon carcinoma
-hypercalciuria	hypercalciuria
-12-0-tetradecanoyl-phorbol_13-acetate	12-0-tetradecanoyl-phorbol 13-acetate
-primary_central_nervous_system_lymphomas	primary central nervous system lymphomas
-1,1-dichloroethylene	1,1-dichloroethylene
-neural_crest_tumors	neural crest tumors
-pain	pain
-cholestasis	cholestasis
-Cholangiocarcinoma	Cholangiocarcinoma
-increases_vascular_calcification	increases vascular calcification
-DCM	DCM
-131I-6beta-iodocholesterol	131I-6beta-iodocholesterol
-impaired_semen_quality	impaired semen quality
-peripheral_T-cell_lymphoma	peripheral T-cell lymphoma
-131-I-metaidobenzylguanidine	131-I-metaidobenzylguanidine
-adrenal_insufficiency	adrenal insufficiency
-11-OCS	11-OCS
-1,3-butadiene	1,3-butadiene
-B_lymphoma	B lymphoma
-tumor	tumor
-1,3-BDG	1,3-BDG
-PCa	PCa
-liver_tumors	liver tumors
-11-hydroxycorticoid	11-hydroxycorticoid
-chronic_liver_disease	chronic liver disease
-diabetic	diabetic
-11C-labeled_acetate	11C-labeled acetate
-12-0-Tetradecanoylphorbol-13-acetate	12-0-Tetradecanoylphorbol-13-acetate
-11-ketodihydrotestosterone	11-ketodihydrotestosterone
-11C-L-methionine	11C-L-methionine
-12-O-tetradecanoyl-phorbol-13-acetate	12-O-tetradecanoyl-phorbol-13-acetate
-10B1-paraboronophenylalanine-HCl	10B1-paraboronophenylalanine-HCl
-prostatic_carcinoma	prostatic carcinoma
-cancer	cancer
-brain_disease	brain disease
-CF	CF
-hyperprolactinemia	hyperprolactinemia
-11-deoxycorticosterone	11-deoxycorticosterone
-moyamoya_disease	moyamoya disease
-acne_vulgaris	acne vulgaris
-steatorrhea	steatorrhea
-1,2,3,6-tetrahydro-N-trichloromethylthiophthalmide	1,2,3,6-tetrahydro-N-trichloromethylthiophthalmide
-1,3,5-Trinitrobenzene	1,3,5-Trinitrobenzene
-myocardial_hypoxia	myocardial hypoxia
-ectopic_intracranial_retinoblastoma	ectopic intracranial retinoblastoma
-prostate_cancer	prostate cancer
-liver_damage	liver damage
-stomatitis	stomatitis
-PKC	PKC
-hypercholesteremia	hypercholesteremia
-PDGF	PDGF
-acne	acne
-11-amino-1-undecanethiol	11-amino-1-undecanethiol
-1,2,3-Triazole	1,2,3-Triazole
-11-dehydrothromboxane_B2	11-dehydrothromboxane B2
-1,2-dimethyl-hydrazine	1,2-dimethyl-hydrazine
-13C-bicarbonate	13C-bicarbonate
-1,2,3,4-tetrahydroisoquinoline-3-carboxylic_acid	1,2,3,4-tetrahydroisoquinoline-3-carboxylic acid
-1,2-Dimethylthdrazine	1,2-Dimethylthdrazine
-1,25-dihydroxy_vitamin_D3	1,25-dihydroxy vitamin D3
-lower_cytotoxicity	lower cytotoxicity
-mouse_ear_oedema	mouse ear oedema
-Parkinsonism	Parkinsonism
-excess_lung_tumors	excess lung tumors
-12-o-tetradecanoyl-phorbol-13-acetate	12-o-tetradecanoyl-phorbol-13-acetate
-1,3-butanediol	1,3-butanediol
-infection	infection
-10-hydroxycamptothecin	10-hydroxycamptothecin
-13C_acetate	13C acetate
-epithelial_injury	epithelial injury
-CAH	CAH
+vascular_neoplasms	vascular neoplasms
+neuro-inflammation	neuro-inflammation
 medullary_thyroid_carcinoma	medullary thyroid carcinoma
-skin_inflammation	skin inflammation
-acute_myelogenous_leukemia	acute myelogenous leukemia
-Hyporesponsiveness	Hyporesponsiveness
-non-coronary_artery_disease	non-coronary artery disease
-convulsive	convulsive
-B_cell_leukemia	B cell leukemia
-Congenital_adrenal_hyperplasia	Congenital adrenal hyperplasia
-seizures	seizures
-inflammation	inflammation
-HT	HT
-11-DOGA	11-DOGA
-125iodine	125iodine
-renal_osteodystrophy	renal osteodystrophy
-Lewy_body_disease	Lewy body disease
-12-O-Tetradecanoylphorbol-13-acetate	12-O-Tetradecanoylphorbol-13-acetate
-skin_carcinogenesis	skin carcinogenesis
-obese	obese
-Chromosomal_instability	Chromosomal instability
-Gastric_tumor	Gastric tumor
-11C-Choline	11C-Choline
-HEP-G2	HEP-G2
-hematologic_and_skeletal_abnormalities	hematologic and skeletal abnormalities
-10-substituted_1,6-diazaphenothizines	10-substituted 1,6-diazaphenothizines
-pheochromocytoma	pheochromocytoma
-malignant_lymphomas	malignant lymphomas
-GEP-tumours	GEP-tumours
 liver_and_kidney_damage	liver and kidney damage
-131I-iodine	131I-iodine
-Toxicity	Toxicity
-10-Hydroxycamptothecine	10-Hydroxycamptothecine
-hyperthyroidism	hyperthyroidism
-inferior_myocardial_defect	inferior myocardial defect
-1-25-hydroxyvitamine_D	1-25-hydroxyvitamine D
-Parkinsonian_symptoms	Parkinsonian symptoms
-inflammatory_bowel_disease	inflammatory bowel disease
-12-hydroxyheptadecadienoic	12-hydroxyheptadecadienoic
-deficiency_of_the_kidney_isozyme	deficiency of the kidney isozyme
-1,2-trans-dicarboxy-4,5-cyclohexanediols_1-3	1,2-trans-dicarboxy-4,5-cyclohexanediols 1-3
-Colon_carcinogenesis	Colon carcinogenesis
-11-oxo-eicosatetranoic_acid	11-oxo-eicosatetranoic acid
-1,2-dichloroethane	1,2-dichloroethane
-hypophosphataemic_osteomalacia	hypophosphataemic osteomalacia
-11-dehydrosinulariolide	11-dehydrosinulariolide
-1,25-Dihydroxyvitamin-D3	1,25-Dihydroxyvitamin-D3
-hormone_refractory_prostate_cancer	hormone refractory prostate cancer
-131-iodine	131-iodine
-embryonal_carcinoma	embryonal carcinoma
-phaeochromocytomas	phaeochromocytomas
-Low-valent_Nb	Low-valent Nb
-1,25-vitamin_D	1,25-vitamin D
-CQDs	CQDs
-1,25-Dihydroxyvitamin_D3	1,25-Dihydroxyvitamin D3
-liver_cancers	liver cancers
-10398A	10398A
-VD	VD
-chronic_myeloid_leukemia	chronic myeloid leukemia
-1,3,7-tripropylxanthine	1,3,7-tripropylxanthine
-myocardial_infarct	myocardial infarct
-1,25D3-MARRS	1,25D3-MARRS
-1,25-D	1,25-D
-colon_tumorigenesis	colon tumorigenesis
-1,2-diacyl-sn-glycerol	1,2-diacyl-sn-glycerol
-10-HDA	10-HDA
-11-dehydro_thromboxane_B2	11-dehydro thromboxane B2
-12-O-tetradecanoyl-1,2-phorbol_13-acetate	12-O-tetradecanoyl-1,2-phorbol 13-acetate
-adrenal_hyperplasia	adrenal hyperplasia
-definitive_implantation_in_the_treatment_of_some_apical_and_non_apical_lung_tumors	definitive implantation in the treatment of some apical and non apical lung tumors
-urinary_bladder_carcinoma	urinary bladder carcinoma
-12-O-Tetradecanoylphorbol_13-acetate	12-O-Tetradecanoylphorbol 13-acetate
-11-dehydro-thromboxane_B2	11-dehydro-thromboxane B2
-SRS	SRS
-1,2-DAG	1,2-DAG
-12-O-tetradecanoyl_phorbol-13_acetate	12-O-tetradecanoyl phorbol-13 acetate
-1,3-butylene_glycol	1,3-butylene glycol
-colon_carcinogenesis	colon carcinogenesis
-myocardial_injury	myocardial injury
-liver_cancer	liver cancer
-NA	NA
-edema	edema
-chronic_lymphocytic_leukemia	chronic lymphocytic leukemia
-cardiac_toxicity	cardiac toxicity
-CCA	CCA
-toxicity	toxicity
-11-dehydro-TXB2	11-dehydro-TXB2
-125I-Propylthiouracil	125I-Propylthiouracil
-10-Thiastearic_acid	10-Thiastearic acid
-hypocalcemia	hypocalcemia
-colorectal_adenocarcinoma	colorectal adenocarcinoma
-12-S-HETE	12-S-HETE
-111In-RP748	111In-RP748
-131I	131I
-12-O-tetradecanylphorbol_13-acetate	12-O-tetradecanylphorbol 13-acetate
-experimental_allergic_encephalomyelitis	experimental allergic encephalomyelitis
-OAVs	OAVs
-colonic_tumors	colonic tumors
-adenocarcinoma	adenocarcinoma
-12-O-tetradecanolyphorbol-13-acetate	12-O-tetradecanolyphorbol-13-acetate
-end-stage_renal_disease	end-stage renal disease
-renal_failure	renal failure
-myeloid_leukemia	myeloid leukemia
-neuropsychic_agitation	neuropsychic agitation
-metabolic_syndrome	metabolic syndrome
-colon_adenocarcinomas	colon adenocarcinomas
-11-mercaptoundecanoic_acid	11-mercaptoundecanoic acid
-123I-beta-methyl_iodophenyl_pentadecanoic_acid	123I-beta-methyl iodophenyl pentadecanoic acid
-dystrophic_mitochondria	dystrophic mitochondria
-Colorectal_tumours	Colorectal tumours
-1,2-dibromoethane	1,2-dibromoethane
-1,2-Dimethylhydrazine_dihydrochloride	1,2-Dimethylhydrazine dihydrochloride
-111In-PSMA-617	111In-PSMA-617
-gliomas	gliomas
-Helicobacter_pylori_infection	Helicobacter pylori infection
-unimolecular_dissociation	unimolecular dissociation
-1,2-Octanediol	1,2-Octanediol
-123I-beta-methyl-iodophenylpentadecanoic_acid	123I-beta-methyl-iodophenylpentadecanoic acid
-TS	TS
-focal_epilepsies	focal epilepsies
-10058-F4	10058-F4
-celiac_disease	celiac disease
-RCM	RCM
-104E	104E
-iron_overload	iron overload
-renal_diseases	renal diseases
-11C-Choline_PET	11C-Choline PET
-11_beta-Hydroxysteroid	11 beta-Hydroxysteroid
-head_and_neck	head and neck
-12-0-tetradecanoylphorbol	12-0-tetradecanoylphorbol
-invasiveness_of_Salmonella	invasiveness of Salmonella
-adipose_dysfunction	adipose dysfunction
-RA	RA
-123I-iomazenil	123I-iomazenil
-131CsCl	131CsCl
-endometrial_adenocarcinoma	endometrial adenocarcinoma
-125I-TU	125I-TU
-Epstein-Barr_virus	Epstein-Barr virus
-1,2-Dichlorobenzene	1,2-Dichlorobenzene
-Acute_skeletal_fluorosis	Acute skeletal fluorosis
-CAD	CAD
-osteoporosis	osteoporosis
-behavioral_depression	behavioral depression
-11-cis-retinal	11-cis-retinal
-hepatic_hemangioma	hepatic hemangioma
-13C-acetate	13C-acetate
-1,25_dihydroxyvitamin_D	1,25 dihydroxyvitamin D
-131I-metaiodobenzylguanidine	131I-metaiodobenzylguanidine
-osteopenia	osteopenia
-12-deoxyphorbol_13-esters	12-deoxyphorbol 13-esters
-1,1-dimethylbiguanide_hydrochloride	1,1-dimethylbiguanide hydrochloride
-11OHA4	11OHA4
-lung_cancer	lung cancer
-mouse_epidermis	mouse epidermis
-123I-iodoazomycin_arabinoside	123I-iodoazomycin arabinoside
-1-0-alkyl-2-acetyl-SN-glycero-3-phosphorylcholine	1-0-alkyl-2-acetyl-SN-glycero-3-phosphorylcholine
+congenital_osteopetrosis	congenital osteopetrosis
+Lung_injury	Lung injury
+1,1-Diphenyl-2-picryl-hydrazyl	1,1-Diphenyl-2-picryl-hydrazyl
+myelodysplastic_syndromes	myelodysplastic syndromes
 1,25_vitamin_D3	1,25 vitamin D3
-1.2-dichloropropane	1.2-dichloropropane
-123I	123I
-epidermal_hyperplasia	epidermal hyperplasia
-angina	angina
-adenomas	adenomas
-erythroleukemia	erythroleukemia
-short_stature_and_skeletal_deformities	short stature and skeletal deformities
-preneoplastic_lesions	preneoplastic lesions
-TD	TD
-unilateral_renal_artery_stenosis	unilateral renal artery stenosis
-uremic	uremic
-leukemia	leukemia
-1,2-dimethylhydrazine	1,2-dimethylhydrazine
-12-O-tetradecanoyl_phorbol-13-acetate	12-O-tetradecanoyl phorbol-13-acetate
-1,25-VD	1,25-VD
-MM	MM
+energy_metabolic_disorder	energy metabolic disorder
+123I-iodoazomycin_arabinoside	123I-iodoazomycin arabinoside
+ketonemia	ketonemia
+10B1-paraboronophenylalanine-HCl	10B1-paraboronophenylalanine-HCl
+131I-6beta-iodomethyl-19-norcholesterol	131I-6beta-iodomethyl-19-norcholesterol
+11C-Choline	11C-Choline
+Acute_skeletal_fluorosis	Acute skeletal fluorosis
+chronic_renal_failure	chronic renal failure
+12-O-tetradecanoylphobol_13-acetate	12-O-tetradecanoylphobol 13-acetate
+1,25-dihydroxyvitamin_D	1,25-dihydroxyvitamin D
+renal_diseases	renal diseases
+HHD	HHD
+hyperplasia	hyperplasia
+125I	125I
+intracranial_tuberculomas	intracranial tuberculomas
+cancer	cancer
+adipose_dysfunction	adipose dysfunction
+trickle-bed_air_biofilter	trickle-bed air biofilter
+amnesia	amnesia
+1,2,4-trichlorobenzene	1,2,4-trichlorobenzene
+protozoan_Crithidia_fasciculata	protozoan Crithidia fasciculata
+switchable_polarity_solvents	switchable polarity solvents
+CAH	CAH
+tumours	tumours
+11-amino-1-undecanethiol	11-amino-1-undecanethiol
+111In-pentetreotide	111In-pentetreotide
+11-dehydro-TXB2	11-dehydro-TXB2
 Rat_osteosarcoma	Rat osteosarcoma
-skin_tumors	skin tumors
-DTC	DTC
-1,25-dihydroxyvitamin-D3	1,25-dihydroxyvitamin-D3
-SCEs	SCEs
-11C-PK11195	11C-PK11195
-iron_in_beta_thalassaemia	iron in beta thalassaemia
-dentinal_carious_lesions	dentinal carious lesions
-1,2-epoxybutene-3	1,2-epoxybutene-3
-long_QT_syndrome	long QT syndrome
-12-O-tetradecanoyl-phorbol-13-ester	12-O-tetradecanoyl-phorbol-13-ester
-11C-choline_positron	11C-choline positron
-12-O-tetradecanoylphorbol-3-acetate	12-O-tetradecanoylphorbol-3-acetate
-carcinoma_of_prostate	carcinoma of prostate
-11-dehydrocorticosterone	11-dehydrocorticosterone
+pheochromocytomas_and_paragangliomas	pheochromocytomas and paragangliomas
+cancers	cancers
+123I-beta-methyl-iodophenylpentadecanoic_acid	123I-beta-methyl-iodophenylpentadecanoic acid
+1.2-diacylglycerol	1.2-diacylglycerol
+10-gingerol	10-gingerol
+1,25_dihydroxyvitamin_D3	1,25 dihydroxyvitamin D3
+111In-SB3	111In-SB3
+type	type
+hepatic_hemangioma	hepatic hemangioma
+1,25-OH2D	1,25-OH2D
+neural_crest_tumours	neural crest tumours
+1,25_dihydroxyvitamin_D	1,25 dihydroxyvitamin D
+pancreatic_cancer	pancreatic cancer
 11C-Methionine	11C-Methionine
-1,25_dihydroxy-vitamin_D3	1,25 dihydroxy-vitamin D3
-13-cis-retinoic_acid	13-cis-retinoic acid
+12-o-tetradecanoyl_phorbol_13-acetate	12-o-tetradecanoyl phorbol 13-acetate
+colon_carcinoma	colon carcinoma
+sympathetic_nervous_dysfunction	sympathetic nervous dysfunction
+Allergic_contact_dermatitis	Allergic contact dermatitis
+1,3-butylene_glycol	1,3-butylene glycol
+idiopathic_hypoparathyroidism	idiopathic hypoparathyroidism
+11C-Choline_PET	11C-Choline PET
+1,3-butadiene	1,3-butadiene
+11-deoxycorticosterone	11-deoxycorticosterone
+GEP-tumours	GEP-tumours
+platelet_aggregation	platelet aggregation
+123I-15-iodophenyl_3-methyl_pentadecanoic_acid	123I-15-iodophenyl 3-methyl pentadecanoic acid
+diabetes	diabetes
+hypertrophic_cardiomyopathy	hypertrophic cardiomyopathy
+12-O-tetradecanoylphorbol_13-acetate	12-O-tetradecanoylphorbol 13-acetate
+1,2,3,4,6-penta-O-galloyl-beta-D-glucopyranoside	1,2,3,4,6-penta-O-galloyl-beta-D-glucopyranoside
+MCF-7_and_MDA-MB-231_breast_cancer	MCF-7 and MDA-MB-231 breast cancer
+excess_lung_tumors	excess lung tumors
+prostate_cancer	prostate cancer
+1-25-hydroxyvitamine_D	1-25-hydroxyvitamine D
+12-hydroxyheptadecatrienoate	12-hydroxyheptadecatrienoate
+12-O-tetradecanoylphorbol-3-acetate	12-O-tetradecanoylphorbol-3-acetate
+lung_tumors	lung tumors
+hematologic_and_skeletal_abnormalities	hematologic and skeletal abnormalities
+adenocarcinoma_of_the_endometrium	adenocarcinoma of the endometrium
 melanotic_melanoma	melanotic melanoma
-acute_renal_failure	acute renal failure
-renal_dialysis	renal dialysis
-IDDM	IDDM
 131-Meta-iodo-benzylguanidine	131-Meta-iodo-benzylguanidine
-mammary_tumor	mammary tumor
-11-OH_THC	11-OH THC
-cardiac_diseases	cardiac diseases
-123I-MEL037	123I-MEL037
-Impairment_of_lipoglycoprotein_metabolism	Impairment of lipoglycoprotein metabolism
-tumors	tumors
-stomach_tumors	stomach tumors
-arrhythmias	arrhythmias
-femoral_fracture	femoral fracture
-12139C	12139C
-1,2-dibromo-3-chloropropane	1,2-dibromo-3-chloropropane
+131-I-bromsulphalein	131-I-bromsulphalein
+dystrophic_mitochondria	dystrophic mitochondria
+BL	BL
+diabetic_retinas	diabetic retinas
+ectopic_intracranial_retinoblastoma	ectopic intracranial retinoblastoma
+leukaemia	leukaemia
+colon_adenocarcinomas	colon adenocarcinomas
+1,2-epoxybutene-3	1,2-epoxybutene-3
+1,3,6-trinitropyrene	1,3,6-trinitropyrene
+pineoblastomas	pineoblastomas
+impaired_renal_function	impaired renal function
+VD	VD
+1,2,4-triazole	1,2,4-triazole
+DTC	DTC
+137Cs_burden	137Cs burden
+IP	IP
+incomplete_bladder_emptying	incomplete bladder emptying
+diabetic_nephropathy	diabetic nephropathy
+head_and_neck	head and neck
+necrosis	necrosis
+1,2-Diamino-4,5-Dibromobenzene	1,2-Diamino-4,5-Dibromobenzene
+123I-Tyr-3-octreotide	123I-Tyr-3-octreotide
+allergic_contact_dermatitis	allergic contact dermatitis
+1,3-Butanediol	1,3-Butanediol
+HEP-G2	HEP-G2
+1,3,6,7-tetrahydroxy-8-prenylxanthone	1,3,6,7-tetrahydroxy-8-prenylxanthone
+prostatic_carcinoma	prostatic carcinoma
+sister_chromatid_exchanges	sister chromatid exchanges
+promyelocytic_leukemia	promyelocytic leukemia
+inflammatory_bowel_disease	inflammatory bowel disease
+hypoparathyroidism	hypoparathyroidism
+111In-octreotide	111In-octreotide
+dilated_cardiomyopathy	dilated cardiomyopathy
+inferior_myocardial_defect	inferior myocardial defect
+milk_fever	milk fever
+tumour	tumour
+inflammatory_myofibroblastic_tumour	inflammatory myofibroblastic tumour
+rickets	rickets
+unilateral_renal_artery_stenosis	unilateral renal artery stenosis
+cold_allodynia	cold allodynia
+PDAC	PDAC
+13C_acetate	13C acetate
+Hypercalcemia	Hypercalcemia
+hypoxia	hypoxia
+13bHCl	13bHCl
+acute_promyelocytic_leukemia	acute promyelocytic leukemia
+12-DHGD	12-DHGD
+Dementia	Dementia
+hyperglycemia	hyperglycemia
+Cataracts	Cataracts
 carcinosarcoma	carcinosarcoma
-10-chlorodeserpidine	10-chlorodeserpidine
+paralysis	paralysis
+1,2-Octanediol	1,2-Octanediol
+WS	WS
+125I-iothalamate	125I-iothalamate
+Hypothyroidism	Hypothyroidism
+131-I-metaidobenzylguanidine	131-I-metaidobenzylguanidine
+11C-MET	11C-MET
+12-methacryloyloxydodecylpyridinium_bromide	12-methacryloyloxydodecylpyridinium bromide
+lymph_node_tuberculosis	lymph node tuberculosis
+brain_tumors	brain tumors
+1,1-difluoroethane	1,1-difluoroethane
+leptomeningeal_metastases	leptomeningeal metastases
+1,2,3,4-butanetetracarboxylic_acid	1,2,3,4-butanetetracarboxylic acid
+renal_dialysis	renal dialysis
+renal_failure	renal failure
+12,13-epoxytrichothecenes	12,13-epoxytrichothecenes
+Toxicity	Toxicity
+tumoral_calcinosis	tumoral calcinosis
+125I-TU	125I-TU
+HT	HT
+hyperprolactinemia	hyperprolactinemia
+cerebral_infarction	cerebral infarction
+urinary_bladder_carcinoma	urinary bladder carcinoma
+123I-heptadecanoic_acid	123I-heptadecanoic acid
+131-iodine	131-iodine
+malformations	malformations
+1,10-phenanthroline	1,10-phenanthroline
+1,2-epoxy-3-butene	1,2-epoxy-3-butene
+skin_inflammation	skin inflammation
+1.2-dichloropropane	1.2-dichloropropane
+stomach_tumors	stomach tumors
+renal_damage	renal damage
+111In-Pentetreotide	111In-Pentetreotide
+non-lymphoid_leukemia	non-lymphoid leukemia
+atopic_dermatitis	atopic dermatitis
+10-hydroxycamptothecin	10-hydroxycamptothecin
+mouse_epidermis	mouse epidermis
+Secondary_hyperparathyroidism	Secondary hyperparathyroidism
+11b-Hydroxysteroid	11b-Hydroxysteroid
+inherited_disease	inherited disease
+1,2,3,4-tetrahydroisoquinoline-3-carboxylic_acid	1,2,3,4-tetrahydroisoquinoline-3-carboxylic acid
+gastrointestinal_cancer	gastrointestinal cancer
+123I-IMZ	123I-IMZ
+Chromosomal_instability	Chromosomal instability
+1,3-butanediol	1,3-butanediol
+colorectal_liver_metastases	colorectal liver metastases
+myocardial_infarct	myocardial infarct
+12-oxo-phytodienoic_acid	12-oxo-phytodienoic acid
+cytotoxicity	cytotoxicity
+12-o-tetradecanoyl_phorbol-13-acetate	12-o-tetradecanoyl phorbol-13-acetate
+multibacillary_leprosy	multibacillary leprosy
+123I-Iomazenil	123I-Iomazenil
+1,3,7-tripropylxanthine	1,3,7-tripropylxanthine
+uremic	uremic
+1,25_OH_vitamin_D	1,25 OH vitamin D
+1,2-sn-DAG	1,2-sn-DAG
+11-ketodihydrotestosterone	11-ketodihydrotestosterone
+myocardial_hypoxia	myocardial hypoxia
+1,2-dichloroethane	1,2-dichloroethane
+Lewy_body_disease	Lewy body disease
+behavioral_depression	behavioral depression
+12-O-tetradecanoyl-1,2-phorbol_13-acetate	12-O-tetradecanoyl-1,2-phorbol 13-acetate
+Colon_carcinogenesis	Colon carcinogenesis
+LCA	LCA
+1,2-dihydroxybenzene	1,2-dihydroxybenzene
+1,2-dihexadecylphosphatidylcholine	1,2-dihexadecylphosphatidylcholine
+Chronic_kidney_disease	Chronic kidney disease
+1,2,6-IP3	1,2,6-IP3
+1-0-alkyl-2-acetyl-SN-glycero-3-phosphorylcholine	1-0-alkyl-2-acetyl-SN-glycero-3-phosphorylcholine
+1,2-diacyl-sn-glycerol	1,2-diacyl-sn-glycerol
+renal_insufficiency	renal insufficiency
+colon_tumors	colon tumors
+11C-methionine	11C-methionine
+end-stage_renal_disease	end-stage renal disease
+12-O-Tetradecanolylphorbol-13-acetate	12-O-Tetradecanolylphorbol-13-acetate
+colorectal_tumours	colorectal tumours
+10058-F4	10058-F4
+pulmonary_tuberculosis	pulmonary tuberculosis
+gliomas	gliomas
+11-HOCS	11-HOCS
+retinoblastoma	retinoblastoma
+Low-valent_Nb	Low-valent Nb
+111In-Octreotide	111In-Octreotide
+parturient_paresis	parturient paresis
+skin_tumor	skin tumor
+skin_tumors	skin tumors
+12-0-tetradecanoyl-phorbol-13-acetate	12-0-tetradecanoyl-phorbol-13-acetate
+1,10-phenantroline	1,10-phenantroline
+secondary_peritonitis	secondary peritonitis
+prostatic_cancer	prostatic cancer
+13-cis_RA	13-cis RA
+1,2-benzisothiazolin-3-one	1,2-benzisothiazolin-3-one
+asbestos	asbestos
+pituitary_adenomas	pituitary adenomas
+embryonal_carcinoma	embryonal carcinoma
+12-epoxyeicosatrienoic_acid	12-epoxyeicosatrienoic acid
+acute_renal_failure	acute renal failure
+mouse_ear_oedema	mouse ear oedema
+125iodine	125iodine
 traumatic_shock	traumatic shock
+celiac_disease	celiac disease
+steatorrhea	steatorrhea
+panic_disorder	panic disorder
+131I-6beta-iodocholesterol	131I-6beta-iodocholesterol
+12-O-tetra-decanoylphorbol-13-acetate	12-O-tetra-decanoylphorbol-13-acetate
+myocardium	myocardium
+hepatic_encephalopathy	hepatic encephalopathy
+12139C	12139C
+pulmonary_malignancy	pulmonary malignancy
+1,3-BDG	1,3-BDG
+11C-PK11195	11C-PK11195
+11a-O-benzoyl-12b-O-acetyltenacigenin_B	11a-O-benzoyl-12b-O-acetyltenacigenin B
+CRPCs	CRPCs
+1,2-dimethylhydrasine	1,2-dimethylhydrasine
+iron_overload	iron overload
+occlusive_cerebrovascular_disease	occlusive cerebrovascular disease
+renal_osteodystrophy	renal osteodystrophy
+Parkinsonian_symptoms	Parkinsonian symptoms
+123I-labeled_metaiodobenzylguanidine	123I-labeled metaiodobenzylguanidine
+Impairment_of_lipoglycoprotein_metabolism	Impairment of lipoglycoprotein metabolism
+BSE	BSE
+hypophosphataemic_osteomalacia	hypophosphataemic osteomalacia
+hypersensitivity	hypersensitivity
+arrhythmias	arrhythmias
+111In-PSMA-617	111In-PSMA-617
+11-oxygenated-C19_androgens	11-oxygenated-C19 androgens
+10-Hydroxycamptothecine	10-Hydroxycamptothecine
+12-O-Tetradecanoylphorbol_13-acetate	12-O-Tetradecanoylphorbol 13-acetate
+12-O-tetradecanoyl-phorbol-13-ester	12-O-tetradecanoyl-phorbol-13-ester
+mammary_tumor	mammary tumor
+B_lymphoma	B lymphoma
+angina	angina
+edema	edema
+osteopenia	osteopenia
+glioblastoma	glioblastoma
+pulmonary_hypertension	pulmonary hypertension
+inhibited_ear_edema	inhibited ear edema
+stomatitis	stomatitis
+1,1,3,3-Tetramethylguanidine	1,1,3,3-Tetramethylguanidine
+MTC	MTC
+colon_carcinogenesis	colon carcinogenesis
+13-cis-retinoic_acid	13-cis-retinoic acid
+neuropsychic_agitation	neuropsychic agitation
+poisoning	poisoning
+1,2,3,4-tetrahydro-1-acridone	1,2,3,4-tetrahydro-1-acridone
+postmenopausal_osteoporosis	postmenopausal osteoporosis
+atherosclerotic_plaque	atherosclerotic plaque
+MM	MM
+Toxic_dermatitis	Toxic dermatitis
+differentiated_thyroid_cancer	differentiated thyroid cancer
+chronic_obstructive_pulmonary_disease	chronic obstructive pulmonary disease
+colitis	colitis
+pancreatic_insulinoma	pancreatic insulinoma
+11OHA4	11OHA4
+10-HDA	10-HDA
+1,25-dihydroxyvitamin-D3	1,25-dihydroxyvitamin-D3
+10-ethyl-10-deaza-aminopterin	10-ethyl-10-deaza-aminopterin
+Occupational_hand_dermatitis	Occupational hand dermatitis
+12-S-HETE	12-S-HETE
+NSCLC	NSCLC
+intra-abdominal_candidiasis	intra-abdominal candidiasis
+anxiety_disorder	anxiety disorder
+early_failure	early failure
+infection	infection
+13C-acetate	13C-acetate
+congenital_adrenal_hyperplasia	congenital adrenal hyperplasia
+13-cis-RA	13-cis-RA
+13ASA	13ASA
+11C-labeled_acetate	11C-labeled acetate
+10-Oxa-5,8-dideazafolic_acid	10-Oxa-5,8-dideazafolic acid
+hypertension	hypertension
+epidermal_hyperplasia	epidermal hyperplasia
+Tumors	Tumors
+Detection_of_breast_disease	Detection of breast disease
+123I-metaiodobenzylguanidine	123I-metaiodobenzylguanidine
+1,2-dibromo-3-chloropropane	1,2-dibromo-3-chloropropane
+intestinal_carcinoids	intestinal carcinoids
+1,3-BG	1,3-BG
+adrenocortical_hyperfunction	adrenocortical hyperfunction
+10-Hydroxycamptothecin	10-Hydroxycamptothecin
+CCA	CCA
+1,25-Dihydroxyvitamin_D	1,25-Dihydroxyvitamin D
+Epstein-Barr_virus	Epstein-Barr virus
+12-0-tetradecanoylphorbol-13-acetate	12-0-tetradecanoylphorbol-13-acetate
+12-methyltridecanal	12-methyltridecanal
+12-0-Tetradecanoylphorbol-13-acetate	12-0-Tetradecanoylphorbol-13-acetate
+11C-ACPC	11C-ACPC
+1,2_DOG	1,2 DOG
+thyroid_cancer	thyroid cancer
+hip_fracture	hip fracture
+1,2-dioleoyl-3-trimethylammonium-propane	1,2-dioleoyl-3-trimethylammonium-propane
+erythroleukemia	erythroleukemia
+Bacterial_Infections	Bacterial Infections
+125I-Propylthiouracil	125I-Propylthiouracil
+1,2-Dichlorobenzene	1,2-Dichlorobenzene
+skin_lesions	skin lesions
+1,2,3,6-tetrahydro-N-trichloromethylthiophthalmide	1,2,3,6-tetrahydro-N-trichloromethylthiophthalmide
+1,25-dihydroxycholecalciferol	1,25-dihydroxycholecalciferol
+12-O-tetradecanoylphorbol-13-acetate	12-O-tetradecanoylphorbol-13-acetate
+12-O-tetradecanoly_Phorbol-13-acetate	12-O-tetradecanoly Phorbol-13-acetate
+12-O-tetradecanoylphorbol13-acetate	12-O-tetradecanoylphorbol13-acetate
+1,2-dioctanoyl-sn-glycerol	1,2-dioctanoyl-sn-glycerol
+1,25-Dihydroxyvitamin-D3	1,25-Dihydroxyvitamin-D3
+1,3-benzodioxoles	1,3-benzodioxoles
+copper_nanoparticles	copper nanoparticles
+11-DOGA	11-DOGA
+long_QT_syndrome	long QT syndrome
+liver_cancer	liver cancer
+primary_hyperparathyroidism	primary hyperparathyroidism
+Tic	Tic
+123I-IMP	123I-IMP
+11OHD	11OHD
+1,25_Dihydroxyvitamin_D3	1,25 Dihydroxyvitamin D3
+experimental_allergic_encephalomyelitis	experimental allergic encephalomyelitis
+12-Acetoxyhawtriwaic_acid_lactone	12-Acetoxyhawtriwaic acid lactone
+chronic_myeloid_leukemia	chronic myeloid leukemia
+11beta-OHD	11beta-OHD
+11-deoxycortisol	11-deoxycortisol
+123I-Tyr3-octreotide	123I-Tyr3-octreotide
+123I-MIBG	123I-MIBG
+1,2-trans-dicarboxy-4,5-cyclohexanediols_1-3	1,2-trans-dicarboxy-4,5-cyclohexanediols 1-3
+brain_injury	brain injury
+11-mercaptoundecanoic_acid	11-mercaptoundecanoic acid
+12-0-tetradecanoyl-phorbol_13-acetate	12-0-tetradecanoyl-phorbol 13-acetate
+Chinese_hamster_ovary	Chinese hamster ovary
+123I-5-IA-85380	123I-5-IA-85380
+intracranial_tumors	intracranial tumors
+12-hydroxyeicosatetraenoic_acid	12-hydroxyeicosatetraenoic acid
+acne	acne
+B-PLL	B-PLL
+123I	123I
+1,2-Dimethylhydrazine_dihydrochloride	1,2-Dimethylhydrazine dihydrochloride
+11-dehydrosinulariolide	11-dehydrosinulariolide
+12-O-tetradecanoyl_phorbol-13-acetate	12-O-tetradecanoyl phorbol-13-acetate
+leukemic_blasts	leukemic blasts
+11-oxo-eicosatetranoic_acid	11-oxo-eicosatetranoic acid
+131I-metaiodobenzylguanidine	131I-metaiodobenzylguanidine
+obese	obese
+Intestinal_carcinoma	Intestinal carcinoma
+13-cis_retinoic_acid	13-cis retinoic acid
+cholestasis	cholestasis
+11-dehydro-CS	11-dehydro-CS
+131_I-metaiodobenzylguanidine	131 I-metaiodobenzylguanidine
+ACF	ACF
+colorectal_adenocarcinoma	colorectal adenocarcinoma
+endometrial_adenocarcinoma	endometrial adenocarcinoma
+10B-BPA	10B-BPA
+11-dehydro-thromboxane_B2	11-dehydro-thromboxane B2
+seizures	seizures
+neuroblastoma	neuroblastoma
+11-hydroxycorticosteroids	11-hydroxycorticosteroids
+11b-hydroxylase_deficiency	11b-hydroxylase deficiency
+13,14-dihydro-15-keto-PGE2	13,14-dihydro-15-keto-PGE2
+10-MDP	10-MDP
+11_beta-Hydroxysteroid	11 beta-Hydroxysteroid
+unimolecular_dissociation	unimolecular dissociation
+Burkitt_lymphoma	Burkitt lymphoma
 brain_edema	brain edema
+BD	BD
+protein_kinase_C	protein kinase C
+SCLC	SCLC
+decreased_hyperplasia	decreased hyperplasia
+focal_epilepsies	focal epilepsies
+1,2-dithiole-3-thione	1,2-dithiole-3-thione
+thyroid_carcinoma	thyroid carcinoma
+CAD	CAD
+071031B	071031B
+12-0-tetradecanoylphorbol	12-0-tetradecanoylphorbol
+1,2-NQ	1,2-NQ
+131CsCl	131CsCl
+13C-caffeine	13C-caffeine
+OAVs	OAVs
+increase_in_the_number_of_osteoclastlike_cells	increase in the number of osteoclastlike cells
+adenomas	adenomas
+alopecia	alopecia
+iron_in_beta_thalassaemia	iron in beta thalassaemia
+hormone_refractory_prostate_cancer	hormone refractory prostate cancer
+lymphomas_of_T-lineage	lymphomas of T-lineage
+1,25_dihydroxy-vitamin_D3	1,25 dihydroxy-vitamin D3
+leukemia	leukemia
+1,2-benzopyrone	1,2-benzopyrone
+OA	OA
+calvarial_osteoblasts	calvarial osteoblasts
+10-deoxy-10-C-morpholinoethyl	10-deoxy-10-C-morpholinoethyl
+cardiac_hypertrophy	cardiac hypertrophy
+125-iodine	125-iodine
+1,2-Dimethylthdrazine	1,2-Dimethylthdrazine
+malignant_gliomas	malignant gliomas
+11-OH_THC	11-OH THC
+bone_loss	bone loss
+1,1-dimethylbiguanide_hydrochloride	1,1-dimethylbiguanide hydrochloride
+1,25-dihydroxyvitamin_D3	1,25-dihydroxyvitamin D3
+1,2-propanediol	1,2-propanediol
+11-hydroxycorticosteroid	11-hydroxycorticosteroid
+gastroesophageal_reflux	gastroesophageal reflux
+131Iodine	131Iodine
+papillary_meningioma	papillary meningioma
+amyloid-beta_and_tau_aggregation	amyloid-beta and tau aggregation
+CKD	CKD
+1,2-diacylglycerol	1,2-diacylglycerol
+11_beta-hydroxysteroid	11 beta-hydroxysteroid
+DCM	DCM
+CQDs	CQDs
+acne_vulgaris	acne vulgaris
+brain_tumor	brain tumor
+1,2,4-trimethyl_benzene	1,2,4-trimethyl benzene
+108/124	108/124
+osteosarcoma	osteosarcoma
+cord_paralysis	cord paralysis
+Osteopenia	Osteopenia
+chronic_lymphocytic_leukemia	chronic lymphocytic leukemia
+colon_tumorigenesis	colon tumorigenesis
+tumor	tumor
+HOL	HOL
+B-CLL	B-CLL
+1,3,4-thiadiazine	1,3,4-thiadiazine
+11C-choline_positron	11C-choline positron
+adenovirus_type_5-infected	adenovirus type 5-infected
+myocardial_ischemia	myocardial ischemia
+convulsive	convulsive
+SCEs	SCEs
+1,25-dihydroxy_vitamin_D3	1,25-dihydroxy vitamin D3
+1,24,25-trihydroxyvitamin_D3	1,24,25-trihydroxyvitamin D3
+1,1-diphenyl-2-picrylhydrazyl	1,1-diphenyl-2-picrylhydrazyl
+11C-Met	11C-Met
+deficiency_of_the_kidney_isozyme	deficiency of the kidney isozyme
+1,3,4-thiadiazines	1,3,4-thiadiazines
+hypercholesteremia	hypercholesteremia
+fatigue	fatigue
+chronic_renal_insufficiency	chronic renal insufficiency
+DKA	DKA
+12-O-tetradecanolyphorbol-13-acetate	12-O-tetradecanolyphorbol-13-acetate
+Congenital_adrenal_hyperplasia	Congenital adrenal hyperplasia
+gastric_emptying	gastric emptying
+oedema	oedema
+11C-choline	11C-choline
+Hyporesponsiveness	Hyporesponsiveness
+DCCHDs	DCCHDs
+111Indium_pentetreotide	111Indium pentetreotide
+HCC	HCC
+Parkinsonism	Parkinsonism
+impaired_semen_quality	impaired semen quality
+11-dehydrothromboxane_B2	11-dehydrothromboxane B2
+1-13C_pyruvate	1-13C pyruvate
+1-14C_linoleic_acid	1-14C linoleic acid
+1,2,3,4,6-penta-O-galloyl-b-d-glucopyranose	1,2,3,4,6-penta-O-galloyl-b-d-glucopyranose
+localized_prostate_cancer	localized prostate cancer
+short_stature_and_skeletal_deformities	short stature and skeletal deformities
+GS	GS
+Hyperplasia	Hyperplasia
+CF	CF
+SAMs	SAMs
+Cardiovascular_symptoms	Cardiovascular symptoms
+1,2-octanediol	1,2-octanediol
+11,12-epoxyeicosatrienoic_acid	11,12-epoxyeicosatrienoic acid
+malignant_lymphomas	malignant lymphomas
+bladder_cancer	bladder cancer
+cerebral_ischemia	cerebral ischemia
+104E	104E
+1,25-Dihydroxycholecalciferol	1,25-Dihydroxycholecalciferol
+malignant_epithelial_and_mesenchymal_skin_tumors	malignant epithelial and mesenchymal skin tumors
+IHCP	IHCP
+sarcomas	sarcomas
+pulmonary_injury	pulmonary injury
+dementia	dementia
+Primary_ovarian_insufficiency	Primary ovarian insufficiency
+Colorectal_tumours	Colorectal tumours
+10-Thiastearic_acid	10-Thiastearic acid
+tumor_hypoxia	tumor hypoxia
+1,25-D3	1,25-D3
+1,2-DCE	1,2-DCE
+pancreatitis	pancreatitis
+Hypertension	Hypertension
+acute_lymphocytic_leukemia	acute lymphocytic leukemia
+amenorrhea	amenorrhea
+vascular_injury	vascular injury
+11Beta-hydroxysteroid	11Beta-hydroxysteroid
+hereditary_blindness	hereditary blindness
+fibrosis	fibrosis
+Pancreatic_Cancer	Pancreatic Cancer
+11-dehydrocorticosterone	11-dehydrocorticosterone
+chronic_liver_disease	chronic liver disease
+Colonic_cancer	Colonic cancer
+10-Hydroxy-2-decenoic_acid	10-Hydroxy-2-decenoic acid
+renal_cell_carcinoma	renal cell carcinoma
+acute_myeloid_leukemia	acute myeloid leukemia
+11C-L-methionine	11C-L-methionine
+13C-aminopyrine	13C-aminopyrine
+Helicobacter_pylori_infection	Helicobacter pylori infection
+123I-Iolopride	123I-Iolopride
+13C-galactose	13C-galactose
+osteogenic_sarcoma	osteogenic sarcoma
+1,2-Diacylglycerol	1,2-Diacylglycerol
+13C-glucose	13C-glucose
+1,25-hydroxyvitamin_D	1,25-hydroxyvitamin D
+1,25_dihydroxy_vitamin_D3	1,25 dihydroxy vitamin D3
+Cancer	Cancer
+123I-iomazenil	123I-iomazenil
+breast_cancer	breast cancer
+12-O-tetradecanoyl-phorbol-13-acetate	12-O-tetradecanoyl-phorbol-13-acetate
+myocardial_injury	myocardial injury
+125Iodine	125Iodine
+liver_damage	liver damage
+Gliomas	Gliomas
+NPC	NPC
+11-Beta	11-Beta
+12-O-tetradecanoyl_phorbol_13-acetate	12-O-tetradecanoyl phorbol 13-acetate
+SE	SE
+12-O-tetradecanylphorbol_13-acetate	12-O-tetradecanylphorbol 13-acetate
+PD	PD
+non-coronary_artery_disease	non-coronary artery disease
+10-chlorodeserpidine	10-chlorodeserpidine
+osteoporosis	osteoporosis
+liver_disease	liver disease
+cortisone_reductase_deficiency	cortisone reductase deficiency
+RA	RA
+moyamoya_disease	moyamoya disease
+colorectal_carcinoma	colorectal carcinoma
+CRC	CRC
+melanoma_C-32_and_breast_cancer	melanoma C-32 and breast cancer
+epidermoid_carcinoma	epidermoid carcinoma
+10-EDAM	10-EDAM
+vesicle_aggregation	vesicle aggregation
+10398A	10398A
+13C-Hiolein	13C-Hiolein
+myocardial_sympathetic_dysfunction	myocardial sympathetic dysfunction
+small-cell_lung_cancer	small-cell lung cancer
+1,25-Dihydroxy_vitamin_D3	1,25-Dihydroxy vitamin D3
+12-HETE	12-HETE
+adrenal_insufficiency	adrenal insufficiency
+acute_nonlymphocytic_leukemia	acute nonlymphocytic leukemia
+toxic_goiter	toxic goiter
+CS	CS
+123I-orthoiodohippurate	123I-orthoiodohippurate
+lung_carcinoma	lung carcinoma
+accidental_hypothermia	accidental hypothermia
+megakaryoblastic_leukemia	megakaryoblastic leukemia
+1,3-butylen_glycol	1,3-butylen glycol
+1,25-Dihydroxyvitamin_D3	1,25-Dihydroxyvitamin D3
+metastatic_tumor	metastatic tumor
+1,25-D	1,25-D
+123I_metaiodobenzylguanidine	123I metaiodobenzylguanidine
+1,1,1,3,3-Pentafluoropropane	1,1,1,3,3-Pentafluoropropane
+Multiple_colorectal_adenocarcinomas	Multiple colorectal adenocarcinomas
+11-oxycorticoids	11-oxycorticoids
+12-hydroxyheptadecadienoic	12-hydroxyheptadecadienoic
+10-HCPT	10-HCPT
+neural_crest_tumors	neural crest tumors
+PKC	PKC
+10-EdAM	10-EdAM
+adenocarcinoma_of_the_prostate	adenocarcinoma of the prostate
+1,1,2-trisubstituted-1H-indenes	1,1,2-trisubstituted-1H-indenes
+1,1-dichloroethylene_epoxide	1,1-dichloroethylene epoxide
+hepatitis	hepatitis
+KD	KD
+13-acetate	13-acetate
+11-OCS	11-OCS
+NA	NA
+1,2-Dimethylhydrazine	1,2-Dimethylhydrazine
+primary_central_nervous_system_lymphomas	primary central nervous system lymphomas
+hyperalgesia	hyperalgesia
+embryonic_day	embryonic day
+1,2-dimethylhydrazine	1,2-dimethylhydrazine
+sickle-cell_disease	sickle-cell disease
+11-dehydro_thromboxane_B2	11-dehydro thromboxane B2
+1,2-sn-Diacylglycerols	1,2-sn-Diacylglycerols
+1,1-Dichloroethylene	1,1-Dichloroethylene
+12a-hydroxyrotenone	12a-hydroxyrotenone
+renal_and_urinary_disorders	renal and urinary disorders
+11beta-hydroxysteroid	11beta-hydroxysteroid
+pulmonary_aspergilloma	pulmonary aspergilloma
+1,1,1-trichloroethane	1,1,1-trichloroethane
+X-linked_hypophosphatemia	X-linked hypophosphatemia
+PDGF	PDGF
+1,3,5-Trinitrobenzene	1,3,5-Trinitrobenzene
+1,2-dimethyl-hydrazine	1,2-dimethyl-hydrazine
+hypercalciuria	hypercalciuria
+1,3-b-D-glucan	1,3-b-D-glucan
+11C	11C
+12-O-tetradecanoyl_phorbol-13_acetate	12-O-tetradecanoyl phorbol-13 acetate
+lower_cytotoxicity	lower cytotoxicity
+pheochromocytoma	pheochromocytoma
+1,1-dichloroethylene	1,1-dichloroethylene
+femoral_fracture	femoral fracture
+temporal_lobe_epilepsy	temporal lobe epilepsy
+head_louse_infestation	head louse infestation
+diabetic	diabetic
+12-0-tetradecanoyl_phorbol_13_acetate	12-0-tetradecanoyl phorbol 13 acetate
+123I-beta-methyl_iodophenyl_pentadecanoic_acid	123I-beta-methyl iodophenyl pentadecanoic acid
+1,2,3,6-methyl-phenyl-tetrahydropyridine	1,2,3,6-methyl-phenyl-tetrahydropyridine
+metastases	metastases
+131I	131I
+autoimmune_thyroiditis	autoimmune thyroiditis
+12-deoxyphorbol_13-esters	12-deoxyphorbol 13-esters
+PHA	PHA
+131I-iodine	131I-iodine
+10-propargyl-5,8-dideazafolate	10-propargyl-5,8-dideazafolate
+granuloma	granuloma
+111In-RP748	111In-RP748
+123I-BMIPP	123I-BMIPP
+idiopathic_dilated_cardiomyopathy	idiopathic dilated cardiomyopathy
+reverse_transcriptase	reverse transcriptase
+13C-bicarbonate	13C-bicarbonate
+1,25-VD	1,25-VD
+inflammation	inflammation
+hypocalcemia	hypocalcemia
+metabolic_syndrome	metabolic syndrome
+definitive_implantation_in_the_treatment_of_some_apical_and_non_apical_lung_tumors	definitive implantation in the treatment of some apical and non apical lung tumors
+hypophosphatemia	hypophosphatemia
+124-amino-acid	124-amino-acid
+111-indium-octreotide	111-indium-octreotide
+SRS	SRS
+toxicity	toxicity
+pancreatic_loop	pancreatic loop
+carcinoma	carcinoma
+small_cell_lung_cancer	small cell lung cancer
+invasiveness_of_Salmonella	invasiveness of Salmonella
+1,25-dihydroxy-vitamin_D3	1,25-dihydroxy-vitamin D3
+adenocarcinoma	adenocarcinoma
+1,2-dihydroxyvitamin_D	1,2-dihydroxyvitamin D
+1,2,6-Tri-O-galloyl-beta-D-glucopyranose	1,2,6-Tri-O-galloyl-beta-D-glucopyranose
+12-0-tetradecanoyl_phorbol-13-acetate	12-0-tetradecanoyl phorbol-13-acetate
+prolactinomas	prolactinomas
+Autonomic_nervous_dysfunction	Autonomic nervous dysfunction
+antigen-presenting_cells	antigen-presenting cells
+atherosclerosis	atherosclerosis
+promyelocytic_leukaemia	promyelocytic leukaemia
+epidural_fibrosis	epidural fibrosis
+obesity	obesity
+gastric_cancer	gastric cancer
+12-O-tetradecanoyl-13-phorbol_acetate	12-O-tetradecanoyl-13-phorbol acetate
+TS	TS
+13-azaprostanoic_acid	13-azaprostanoic acid
+preneoplastic_lesions	preneoplastic lesions
+toxicosis	toxicosis
+Yoshida_sarcoma	Yoshida sarcoma
+1,2-Dibromoethane	1,2-Dibromoethane
+1,2-DAG	1,2-DAG
+Cholangiocarcinoma	Cholangiocarcinoma
+malignancy	malignancy
+heart_failure	heart failure
+advanced_cancer	advanced cancer
+13C	13C
+1,25-vitamin_D3	1,25-vitamin D3
+PCa	PCa
+carcinoma_of_the_prostate	carcinoma of the prostate
+hepatoma	hepatoma
+phaeochromocytomas_and_paragangliomas	phaeochromocytomas and paragangliomas
+unstable_angina	unstable angina
+10-ethyl-10-deazaaminopterin	10-ethyl-10-deazaaminopterin
+123I-ioflupane	123I-ioflupane
+squamous_cell_carcinoma	squamous cell carcinoma
+111In-DTPA-peptide-biotin	111In-DTPA-peptide-biotin
+11C-sarcosine	11C-sarcosine
+1,2,3-triazoles	1,2,3-triazoles
+1,1-dichlorodiphenildichloroethane	1,1-dichlorodiphenildichloroethane
+12-O-tetradecanoylphorbol_acetate	12-O-tetradecanoylphorbol acetate
+12-tetradecanoylphorbol-13-acetate	12-tetradecanoylphorbol-13-acetate
+myeloid_leukemia	myeloid leukemia
+brain_infarction	brain infarction
+IDDM	IDDM
+1,2-dimethylhydrazine_dihydrochloride	1,2-dimethylhydrazine dihydrochloride
+10-methylene_tetrahydrofolate	10-methylene tetrahydrofolate
+antioxidant_activity	antioxidant activity
+familial_amyloid_polyneuropathy_type_I	familial amyloid polyneuropathy type I
+Subchronic_toxicity	Subchronic toxicity
+colon_cancer	colon cancer
+123I-Meta-Iodobenzylguanidine	123I-Meta-Iodobenzylguanidine
+1,2,3-Triazole	1,2,3-Triazole
+HHT	HHT
+ATL	ATL
+tumors	tumors
+oral_squamous_carcinoma	oral squamous carcinoma
+1,2-dipalmitoyl-sn-glycero-3-phosphoethanolamine	1,2-dipalmitoyl-sn-glycero-3-phosphoethanolamine
+chest_pain	chest pain
+TD	TD
+melanoma	melanoma
+12-O-tetradecanoyl-phorbol_13-acetate	12-O-tetradecanoyl-phorbol 13-acetate
+11-deoxyprostaglandin_E1	11-deoxyprostaglandin E1
+hyperthyroidism	hyperthyroidism
+11-keto-b-boswellic_acid	11-keto-b-boswellic acid
+Renal_cell_tumors	Renal cell tumors
+1,3,5-trioxetanetrione	1,3,5-trioxetanetrione
+peripheral_T-cell_lymphoma	peripheral T-cell lymphoma
+Cervical_Lesions	Cervical Lesions
+1,25-DHCC	1,25-DHCC
+experimental_autoimmune_encephalomyelitis	experimental autoimmune encephalomyelitis
+1,2-dimethyl-3-hydroxypyrid-4-one	1,2-dimethyl-3-hydroxypyrid-4-one
+1,25-hydroxyvitamin_D3	1,25-hydroxyvitamin D3
+12-O-tetradecaoylphorbol-13-acetate	12-O-tetradecaoylphorbol-13-acetate
+1,2-dibromoethane	1,2-dibromoethane
+islet-cell_tumors	islet-cell tumors
+Gastric_tumor	Gastric tumor
+glioma	glioma
+epilepsy	epilepsy
+pigment_dispersion	pigment dispersion
+13-cis	13-cis
+12-MTA	12-MTA
+12-o-tetradecanoyl-phorbol-13-acetate	12-o-tetradecanoyl-phorbol-13-acetate
+hypothyroidism	hypothyroidism
+epithelial_injury	epithelial injury
+Ovarian_cancer	Ovarian cancer
+13762A	13762A
+carcinoma_of_prostate	carcinoma of prostate
+lung_cancer	lung cancer
+essential_and_renovascular_hypertension	essential and renovascular hypertension
+basal_ganglia_germinoma	basal ganglia germinoma
+123I-Metaiodobenzylguanidine	123I-Metaiodobenzylguanidine
+1,25D3-MARRS	1,25D3-MARRS
+psoriasis	psoriasis
+self-assembled_monolayers	self-assembled monolayers
+13_cis-retinoic_acid	13 cis-retinoic acid
+1,2-dithiole-3-thiones	1,2-dithiole-3-thiones
+aldosterone_deficiency	aldosterone deficiency
+DDD	DDD
+11-methyl-17-ketone	11-methyl-17-ketone
+12-O-Tetradecanoylphorbol-13-acetate	12-O-Tetradecanoylphorbol-13-acetate
+1,1-disubstituted_olefin	1,1-disubstituted olefin
+dentinal_carious_lesions	dentinal carious lesions
+111-indium_DTPA_octreotide	111-indium DTPA octreotide
+neuroendocrine_tumors	neuroendocrine tumors
+10-substituted_1,6-diazaphenothizines	10-substituted 1,6-diazaphenothizines
+10-Cl-BBQ	10-Cl-BBQ
+liver_tumors	liver tumors
+1,2:5,6-dianhydrogalactitol	1,2:5,6-dianhydrogalactitol
+ischemia	ischemia
+acute_myocardial_infarction	acute myocardial infarction
+colonic_tumors	colonic tumors
+secondary_hyperparathyroidism	secondary hyperparathyroidism
+12,13-epoxyoctadecenoic_acid	12,13-epoxyoctadecenoic acid
+asthma	asthma
+129Cs	129Cs
+11b-hydroxysteroid	11b-hydroxysteroid
+heat_shock	heat shock
+MCF	MCF
+irritant_contact_dermatitis	irritant contact dermatitis
+Macrocytic-megaloblastic_anemia	Macrocytic-megaloblastic anemia
+PLD	PLD
+hypercalcemia	hypercalcemia
+12-O-tetradecanoyl-phorbol-13_acetate	12-O-tetradecanoyl-phorbol-13 acetate
+fragmentation	fragmentation
+13,14-Dihydro-15-keto_prostaglandin_F2_alpha	13,14-Dihydro-15-keto prostaglandin F2 alpha
+cardiac_toxicity	cardiac toxicity
+Liver_disease	Liver disease
+13C-acid	13C-acid
+11-cis-retinal	11-cis-retinal
+thalassemia	thalassemia
+1,2_dimethylhydrazine	1,2 dimethylhydrazine
+1,25-vitamin_D	1,25-vitamin D
+EBV	EBV
+11C-AC	11C-AC
+acromegaly	acromegaly
+1,2-dichlorohexafluorocyclobutane	1,2-dichlorohexafluorocyclobutane
+11C-N-methylspiperone	11C-N-methylspiperone
+1,2-dichloropropane	1,2-dichloropropane
+Alzheimer_disease	Alzheimer disease
+pain	pain
+T2DM	T2DM
+ischemic	ischemic
+phaeochromocytomas	phaeochromocytomas
+B_cell_leukemia	B cell leukemia
+1242-MG	1242-MG
+AML	AML
+colon_cancers	colon cancers
+papillomas	papillomas
+Protein_kinase_C	Protein kinase C
+11-hydroxycorticoid	11-hydroxycorticoid
+Postmenopausal_osteoporosis	Postmenopausal osteoporosis
+increases_vascular_calcification	increases vascular calcification
+metastasis	metastasis
+adrenal_metastases	adrenal metastases
+1,1-dichloro-2-propanone	1,1-dichloro-2-propanone
+melanoma_tumor	melanoma tumor
+brain_disease	brain disease
+malignant_tumor	malignant tumor
+hypertensive	hypertensive
+cardiac_diseases	cardiac diseases
+mitochondrial_myopathy	mitochondrial myopathy
+123I-MEL037	123I-MEL037
+clonal_osteoblast-like_rat_osteogenic_sarcoma	clonal osteoblast-like rat osteogenic sarcoma
+non-small-cell_lung_cancer	non-small-cell lung cancer
+PDB	PDB
+chronic_kidney_disease	chronic kidney disease
+skin_carcinogenesis	skin carcinogenesis
+malignant_pheochromocytoma	malignant pheochromocytoma
+RCM	RCM
+adrenal_hyperplasia	adrenal hyperplasia
+WT	WT
+acute_myelogenous_leukemia	acute myelogenous leukemia
+liver_cancers	liver cancers
