@@ -98,12 +98,19 @@ for pair in part_i_and_ii_files:
 
         triples = []
 
+        i = 0
+
         for entity1, entity2, path in entities_and_paths:
             theme = path_to_theme[path]
 
             # Skip these themes for now
             if theme not in relation_lookup or relation_lookup[theme] != "treatment":
                 continue
+
+            i += 1
+
+            if i == 1000:
+                break
 
             triple = (entity1, relation_lookup[theme], entity2)
             triples.append(triple)
@@ -167,13 +174,13 @@ for pair in part_i_and_ii_files:
         train_triples.extend(triples[valid_sample_count*2:])
 
         # Write the train, valid, test splits to tsv
-        df = pd.DataFrame(train_triples[:1000])
+        df = pd.DataFrame(train_triples)
         df.to_csv('./data/train.tsv', sep='\t', index=False, header=False)
 
-        df = pd.DataFrame(valid_triples[:200])
+        df = pd.DataFrame(valid_triples)
         df.to_csv('./data/dev.tsv', sep='\t', index=False, header=False)
 
-        df = pd.DataFrame(test_triples[:200])
+        df = pd.DataFrame(test_triples)
         df.to_csv('./data/test.tsv', sep='\t', index=False, header=False)
         
         # Write the entities to tsv
@@ -186,4 +193,5 @@ for pair in part_i_and_ii_files:
         all_relations = list(set(relations))
         relations2text = { (r, r.replace("_", " ")) for r in all_relations }
         df = pd.DataFrame(relations2text)
+        df.to_csv('./data/relation2text.txt', sep='\t', index=False, header=False)
         df.to_csv('./data/relation2text.txt', sep='\t', index=False, header=False)
