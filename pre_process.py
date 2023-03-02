@@ -111,12 +111,8 @@ for pair in part_i_and_ii_files:
             diseases.append(entity2)
             relations.append(relation_lookup[theme])
 
-        triples = list(set(triples))
-        chemicals = list(set(chemicals))
-        diseases = list(set(diseases))
-
         # Write array to tsv
-        df = pd.DataFrame(triples, columns=['entity1', 'theme', 'entity2'])
+        df = pd.DataFrame(list(set(triples)), columns=['entity1', 'theme', 'entity2'])
         df.to_csv('./triples/unique_{}.tsv'.format(pair[1].replace("part-ii-dependency-paths-", "").replace("-sorted-with-themes.txt", "")), sep='\t', index=False)
 
         # df = pd.DataFrame(triples, columns=['entity1', 'theme', 'entity2'])
@@ -125,10 +121,10 @@ for pair in part_i_and_ii_files:
 
         # TODO: Generalize the following lines when we have more themes
         # Write entities to tsv
-        df = pd.DataFrame(chemicals)
+        df = pd.DataFrame(list(set(chemicals)))
         df.to_csv('./entities/chemicals.tsv', sep='\t', index=False)
 
-        df = pd.DataFrame(diseases)
+        df = pd.DataFrame(list(set(diseases)))
         df.to_csv('./entities/diseases.tsv', sep='\t', index=False)
 
         # Generate train, valid, test splits
@@ -181,7 +177,7 @@ for pair in part_i_and_ii_files:
         df.to_csv('./data/test.tsv', sep='\t', index=False, header=False)
         
         # Write the entities to tsv
-        all_entities = list(set(list(set(chemicals)) + list(set(diseases))))
+        all_entities = list(set(chemicals)) + list(set(diseases))
         entities2text = { (c, c.replace("_", " ")) for c in all_entities }
         df = pd.DataFrame(entities2text)
         df.to_csv('./data/entity2text.txt', sep='\t', index=False, header=False)
