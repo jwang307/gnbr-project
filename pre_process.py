@@ -167,13 +167,13 @@ for pair in part_i_and_ii_files:
         train_triples.extend(triples[valid_sample_count*2:])
 
         # Write the train, valid, test splits to tsv
-        df = pd.DataFrame(train_triples)
+        df = pd.DataFrame(train_triples[:1000])
         df.to_csv('./data/train.tsv', sep='\t', index=False, header=False)
 
-        df = pd.DataFrame(valid_triples)
+        df = pd.DataFrame(valid_triples[:200])
         df.to_csv('./data/dev.tsv', sep='\t', index=False, header=False)
 
-        df = pd.DataFrame(test_triples)
+        df = pd.DataFrame(test_triples[:200])
         df.to_csv('./data/test.tsv', sep='\t', index=False, header=False)
         
         # Write the entities to tsv
