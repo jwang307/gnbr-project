@@ -1,21 +1,29 @@
 # coding=UTF-8
-import os
 import argparse
-from tqdm import tqdm
-import torch
+import os
+import pickle
+
 # import pdb
 import random
-import pickle
+
 import numpy as np
+import torch
+from tqdm import tqdm
+from transformers import (
+    AdamW,
+    AutoConfig,
+    AutoModel,
+    AutoTokenizer,
+    BertConfig,
+    BertForMaskedLM,
+    BertModel,
+    BertTokenizer,
+    get_linear_schedule_with_warmup,
+)
 
-from transformers import BertTokenizer, BertModel, BertConfig, BertForMaskedLM
-from transformers import AutoTokenizer, AutoModel, AutoConfig
-from transformers import AdamW
-from transformers import get_linear_schedule_with_warmup
-
-from trainer import Trainer
 from dataloader import DataLoader
 from model import LMKE
+from trainer import Trainer
 
 if __name__ == '__main__':
     # argparser
@@ -70,11 +78,8 @@ if __name__ == '__main__':
     random.seed(arg.seed)
     np.random.seed(arg.seed)
     torch.manual_seed(arg.seed)
-    try:
-        device = torch.device('mps')
-    except Exception as e:
-        device = torch.device('cpu')
-        print(e)
+    
+    device = torch.device('cuda')
 
     if arg.plm == 'bert':
         plm_name = "bert-base-uncased"
