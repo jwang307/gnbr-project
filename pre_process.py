@@ -109,7 +109,7 @@ for pair in part_i_and_ii_files:
 
             i += 1
 
-            if i == 1000:
+            if i == 10000:
                 break
 
             triple = (entity1, relation_lookup[theme], entity2)
