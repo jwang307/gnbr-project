@@ -100,6 +100,8 @@ for pair in part_i_and_ii_files:
 
         for entity1, entity2, path in entities_and_paths:
             theme = path_to_theme[path]
+            entity1 = entity1.lower()
+            entity2 = entity2.lower()
 
             # Skip these themes for now
             if theme not in relation_lookup or relation_lookup[theme] != "treatment":
@@ -190,4 +192,5 @@ for pair in part_i_and_ii_files:
         all_relations = list(set(relations))
         relations2text = { (r, r.replace("_", " ")) for r in all_relations }
         df = pd.DataFrame(relations2text)
+        df.to_csv('./data/relation2text.txt', sep='\t', index=False, header=False)
         df.to_csv('./data/relation2text.txt', sep='\t', index=False, header=False)
