@@ -98,6 +98,8 @@ for pair in part_i_and_ii_files:
 
         triples = []
 
+        i = 0
+
         for entity1, entity2, path in entities_and_paths:
             theme = path_to_theme[path]
             entity1 = entity1.lower()
@@ -106,6 +108,10 @@ for pair in part_i_and_ii_files:
             # Skip these themes for now
             if theme not in relation_lookup or relation_lookup[theme] != "treatment":
                 continue
+
+            i += 1
+            if i == 10000:
+                break
 
             triple = (entity1, relation_lookup[theme], entity2)
             triples.append(triple)
@@ -192,5 +198,4 @@ for pair in part_i_and_ii_files:
         all_relations = list(set(relations))
         relations2text = { (r, r.replace("_", " ")) for r in all_relations }
         df = pd.DataFrame(relations2text)
-        df.to_csv('./data/relation2text.txt', sep='\t', index=False, header=False)
         df.to_csv('./data/relation2text.txt', sep='\t', index=False, header=False)
