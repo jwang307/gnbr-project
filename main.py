@@ -144,6 +144,8 @@ if __name__ == '__main__':
         data_loader.adding_tokens()
         lm_model.resize_token_embeddings(len(lm_tokenizer))
 
+    lm_model.to(device)
+
     model = LMKE(lm_model, n_ent=len(data_loader.ent2id), n_rel=len(data_loader.rel2id), add_tokens=arg.add_tokens,
                  contrastive=arg.contrastive)
 

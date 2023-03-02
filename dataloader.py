@@ -1,16 +1,17 @@
+import copy
+import math
 import os
+import pickle
+
 # import pdb
 import random
-import math
-import pickle
-import torch
 import time
+
+import torch
 from tqdm import tqdm
-import copy
 from transformers import BatchEncoding
 
 count_sampler = 0
-
 
 class DataSampler(object):
     def __init__(self, datasetName, mode, pos_dataset, whole_dataset, batch_size, entity_set, relation_set, neg_rate,
@@ -532,7 +533,7 @@ class DataLoader(object):
 
         for i in range(batch_size):
             tokens = self.tokenizer.convert_tokens_to_ids(batch_tokens[i])
-            input_ids[i, :len(tokens)] = torch.tensor(tokens).long()
+            input_ids[i, :len(tokens)] = torch.tensor(tokens).long().to(torch.device('cuda'))
             attention_mask[i, :len(tokens)] = 1
 
         if model == 'roberta':

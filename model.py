@@ -1,13 +1,15 @@
+import copy
 import math
 import os
+import pickle
+import random
+
+import numpy as np
+
 #import pdb
 import torch
 from torch import nn
 from torch.nn import CrossEntropyLoss, MSELoss
-import numpy as np
-import pickle
-import random
-import copy
 
 num_deg_features = 2
 class LMKE(nn.Module):
