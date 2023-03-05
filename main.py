@@ -37,7 +37,7 @@ if __name__ == '__main__':
     parser.add_argument('--weight_decay', type=float, default=1e-7)
 
     parser.add_argument('--data', type=str, default='chemical-disease')
-    parser.add_argument('--plm', type=str, default='biobert', choices=['bert', 'biobert'])
+    parser.add_argument('--plm', type=str, default='tiny', choices=['bert', 'biobert', 'tiny'])
     parser.add_argument('--description', type=str, default='desc')
 
     parser.add_argument('--load_path', type=str, default=None)
@@ -61,7 +61,7 @@ if __name__ == '__main__':
     parser.add_argument('--contrastive', default=False, action='store_true')
     parser.add_argument('--wandb', default=False, action='store_true')
     parser.add_argument('--load_descriptions', default=False, action='store_true')
-
+    parser.add_argument('--predictions', type=str, default='./predictions/')
     parser.add_argument('--task', default='LP', choices=['LP', 'TC'])
 
     arg = parser.parse_args()
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     random.seed(arg.seed)
     np.random.seed(arg.seed)
     torch.manual_seed(arg.seed)
-    
+
     device = torch.device('cuda')
 
     if arg.plm == 'bert':
@@ -86,6 +86,9 @@ if __name__ == '__main__':
         t_model = 'bert'
     elif arg.plm == 'biobert':
         plm_name = "dmis-lab/biobert-v1.1"
+        t_model = 'bert'
+    elif arg.plm == 'tiny':
+        plm_name = "prajjwal1/bert-tiny"
         t_model = 'bert'
 
     if arg.data == 'chemical-gene':
@@ -118,9 +121,9 @@ if __name__ == '__main__':
             'train': './sample_lmke_data/fb15k-237/train.tsv',
             'valid': './sample_lmke_data/fb15k-237/dev.tsv',
             'test': './sample_lmke_data/fb15k-237/test.tsv',
-            'text': ['./sample_lmke_data/fb15k-237/FB15k_mid2description.txt', 
-                #'./sample_lmke_data/fb15k-237/entity2textlong.txt', 
-                './sample_lmke_data/fb15k-237/relation2text.txt']
+            'text': ['./sample_lmke_data/fb15k-237/FB15k_mid2description.txt',
+                     # './sample_lmke_data/fb15k-237/entity2textlong.txt',
+                     './sample_lmke_data/fb15k-237/relation2text.txt']
         }
     elif arg.data == 'wn18rr':
         in_paths = {
@@ -128,8 +131,8 @@ if __name__ == '__main__':
             'train': './sample_lmke_data/WN18RR/train.tsv',
             'valid': './sample_lmke_data/WN18RR/dev.tsv',
             'test': './sample_lmke_data/WN18RR/test.tsv',
-            'text': ['./sample_lmke_data/WN18RR/my_entity2text.txt', 
-                './sample_lmke_data/WN18RR/relation2text.txt']
+            'text': ['./sample_lmke_data/WN18RR/my_entity2text.txt',
+                     './sample_lmke_data/WN18RR/relation2text.txt']
         }
 
     lm_config = AutoConfig.from_pretrained(plm_name, cache_dir='./cached_model')
@@ -198,7 +201,8 @@ if __name__ == '__main__':
         'no_use_lm': arg.no_use_lm,
         'contrastive': arg.contrastive,
         'task': arg.task,
-        'wandb': arg.wandb
+        'wandb': arg.wandb,
+        'predictions': arg.predictions
     }
 
     trainer = Trainer(data_loader, model, lm_tokenizer, optimizer, device, hyperparams)

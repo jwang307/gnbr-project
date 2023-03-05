@@ -4,3 +4,9 @@ cache/
 .ipynb_checkpoints/*
 .DS_Store
 */.DS_Store
+gnbr.pem
+gnbr_project.pem
+params/*
+cached_model/*
+sampler/*
+openke/*

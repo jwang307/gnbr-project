@@ -21,8 +21,8 @@ relation_lookup = {
 }
 
 # Part I files
-part_i_files = ['part-i-chemical-disease-path-theme-distributions 2.txt']
-part_ii_files = ['part-ii-dependency-paths-chemical-disease-sorted-with-themes.txt']
+part_i_files = ['part-i-chemical-disease-path-theme-distributions.tsv']
+part_ii_files = ['part-ii-dependency-paths-chemical-disease-sorted-with-themes.tsv']
 
 # Process part I files
 for file in part_i_files:
@@ -199,3 +199,33 @@ for pair in part_i_and_ii_files:
         relations2text = { (r, r.replace("_", " ")) for r in all_relations }
         df = pd.DataFrame(relations2text)
         df.to_csv('./data/relation2text.txt', sep='\t', index=False, header=False)
+
+
+        # Write the entities to tsv
+        all_entities = list(set(chemicals)) + list(set(diseases))
+        entities2text = [(entity, count) for count, entity in enumerate(all_entities)]
+        # entities2text.sort(key=lambda x: x[1])
+        df = pd.DataFrame(entities2text)
+        df.to_csv('./openke/entity2id.txt', sep='\t', index=False, header=False)
+
+        # Write the relations to tsv
+        all_relations = list(set(relations))
+        relations2text = {(relation, count) for count, relation in enumerate(all_relations)}
+        df = pd.DataFrame(relations2text)
+        print(df.head())
+        df.to_csv('./openke/relation2id.txt', sep='\t', index=False, header=False)
+
+        entity_map = {entity: count  for count, entity in enumerate(all_entities)}
+        relation_map = {relation: count for count, relation in enumerate(all_relations)}
+
+        train_triples = [(entity_map[tup[0]], entity_map[tup[2]], relation_map[tup[1]]) for tup in train_triples]
+        df = pd.DataFrame(train_triples)
+        df.to_csv('./openke/train2id.txt', sep=' ', index=False, header=False)
+
+        valid_triples = [(entity_map[tup[0]], entity_map[tup[2]], relation_map[tup[1]]) for tup in valid_triples]
+        df = pd.DataFrame(valid_triples)
+        df.to_csv('./openke/valid2id.txt', sep=' ', index=False, header=False)
+
+        test_triples = [(entity_map[tup[0]], entity_map[tup[2]], relation_map[tup[1]]) for tup in test_triples]
+        df = pd.DataFrame(test_triples)
+        df.to_csv('./openke/test2id.txt', sep=' ', index=False, header=False)

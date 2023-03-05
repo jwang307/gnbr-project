@@ -1,3 +1,4 @@
+import pandas as pd
 import torch
 import torch.nn.functional as F
 from tqdm import tqdm
@@ -28,9 +29,13 @@ class Trainer:
         self.optimizer = optimizer
         self.device = device
         self.identifier = hyperparams['identifier']
+        print(self.identifier)
         self.hyperparams = hyperparams
         self.save_folder = save_folder
         self.load_epoch = hyperparams['load_epoch']
+        self.predictions = hyperparams['predictions']
+        if not os.path.exists(self.predictions):
+            os.mkdir(self.predictions)
 
         model.to(device)
 
@@ -171,6 +176,14 @@ class Trainer:
                         labels = torch.tensor(labels).to(device)
 
                         preds = model(inputs, positions, mode, triple_degrees)
+                        if hyperparams['use_structure']:
+                            triple_score = model.forward_transe(positions, mode).squeeze()
+
+                            preds_transe = (margin - triple_score).sigmoid().unsqueeze(0)
+
+                            if hyperparams['no_use_lm']:
+                                preds = preds_transe
+
                         loss = criterion(preds, labels)
 
                         pred_labels = preds.argmax(dim=1)
@@ -412,6 +425,8 @@ class Trainer:
             n_batch = len(data_sampler)
             dataset_size = data_sampler.get_dataset_size()
 
+            record = {'preds': [], 'labels': []}
+
             for i_b, batch in tqdm(enumerate(data_sampler), total=n_batch):
                 triples = [i[0] for i in batch]
                 triple_degrees = [[degrees.get(e, 0) for e in triple] for triple in triples]
@@ -424,13 +439,28 @@ class Trainer:
 
                     if mode == 'triple_classification':
                         labels = [i[1] for i in batch]
+
                         labels = torch.tensor(labels).to(device)
 
                         preds = model(inputs, positions, mode, triple_degrees)
+
+                        if hyperparams['use_structure']:
+                            triple_score = model.forward_transe(positions, mode).squeeze()
+
+                            preds_transe = (margin - triple_score).sigmoid().unsqueeze(0)
+
+                            if hyperparams['no_use_lm']:
+                                preds = preds_transe
                         loss = criterion(preds, labels)
 
                         pred_labels = preds.argmax(dim=1)
                         total_accuracy += (pred_labels == labels).int().sum().item()
+
+                        # for saving
+                        pred_labels = list(pred_labels.cpu().numpy())
+                        labels = list(labels.cpu().numpy())
+                        record['preds'] += pred_labels
+                        record['labels'] += labels
 
                         total_loss_triple_classification += loss.item() * batch_size_
 
@@ -447,6 +477,10 @@ class Trainer:
 
             if split != 'test':
                 self.save_model(epc, 'acc', avg_accuracy)
+            else:
+                print(record)
+                pd.DataFrame.from_dict(record).to_csv(self.predictions + self.identifier + '-predictions.csv',
+                                                      index=False)
 
         model.train()
 
@@ -667,26 +701,32 @@ class Trainer:
                     if not group.startswith('both'):
 
                         mr_head = (
-                        (MR_by_degree[group][setting]['head'] / max(count_by_degree[group][setting]['head'], 1)))
+                            (MR_by_degree[group][setting]['head'] / max(count_by_degree[group][setting]['head'], 1)))
                         mrr_head = (
-                        (MRR_by_degree[group][setting]['head'] / max(count_by_degree[group][setting]['head'], 1)))
+                            (MRR_by_degree[group][setting]['head'] / max(count_by_degree[group][setting]['head'], 1)))
                         hits1_head = (
-                        (hits_by_degree[group][setting]['head'][1] / max(count_by_degree[group][setting]['head'], 1)))
+                            (hits_by_degree[group][setting]['head'][1] / max(count_by_degree[group][setting]['head'],
+                                                                             1)))
                         hits3_head = (
-                        (hits_by_degree[group][setting]['head'][3] / max(count_by_degree[group][setting]['head'], 1)))
+                            (hits_by_degree[group][setting]['head'][3] / max(count_by_degree[group][setting]['head'],
+                                                                             1)))
                         hits10_head = (
-                        (hits_by_degree[group][setting]['head'][10] / max(count_by_degree[group][setting]['head'], 1)))
+                            (hits_by_degree[group][setting]['head'][10] / max(count_by_degree[group][setting]['head'],
+                                                                              1)))
 
                         mr_tail = (
-                        (MR_by_degree[group][setting]['tail'] / max(count_by_degree[group][setting]['tail'], 1)))
+                            (MR_by_degree[group][setting]['tail'] / max(count_by_degree[group][setting]['tail'], 1)))
                         mrr_tail = (
-                        (MRR_by_degree[group][setting]['tail'] / max(count_by_degree[group][setting]['tail'], 1)))
+                            (MRR_by_degree[group][setting]['tail'] / max(count_by_degree[group][setting]['tail'], 1)))
                         hits1_tail = (
-                        (hits_by_degree[group][setting]['tail'][1] / max(count_by_degree[group][setting]['tail'], 1)))
+                            (hits_by_degree[group][setting]['tail'][1] / max(count_by_degree[group][setting]['tail'],
+                                                                             1)))
                         hits3_tail = (
-                        (hits_by_degree[group][setting]['tail'][3] / max(count_by_degree[group][setting]['tail'], 1)))
+                            (hits_by_degree[group][setting]['tail'][3] / max(count_by_degree[group][setting]['tail'],
+                                                                             1)))
                         hits10_tail = (
-                        (hits_by_degree[group][setting]['tail'][10] / max(count_by_degree[group][setting]['tail'], 1)))
+                            (hits_by_degree[group][setting]['tail'][10] / max(count_by_degree[group][setting]['tail'],
+                                                                              1)))
 
                         mr = int((mr_head + mr_tail) / 2 * 1000) / 1000
                         mrr = int((mrr_head + mrr_tail) / 2 * 1000) / 1000
