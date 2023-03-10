@@ -106,8 +106,8 @@ for pair in part_i_and_ii_files:
             entity2 = entity2.lower()
 
             # Skip these themes for now
-            if theme not in relation_lookup or relation_lookup[theme] != "treatment":
-                continue
+            # if theme not in relation_lookup or relation_lookup[theme] != "treatment":
+            #     continue
 
             i += 1
             if i == 10000:
