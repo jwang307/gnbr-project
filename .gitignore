@@ -10,3 +10,4 @@ params/*
 cached_model/*
 sampler/*
 openke/*
+complete_dataset/*
