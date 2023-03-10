@@ -265,6 +265,8 @@ class Trainer:
 
                         bce_loss = []
                         preds_list = []
+                        # torch.cuda.empty_cache()
+                        # print(torch.cuda.memory_summary(device=None, abbreviated=False))
 
                         if not hyperparams['no_use_lm']:
                             if hyperparams['contrastive']:
@@ -799,7 +801,7 @@ class Trainer:
             self.save_model(epc, 'fil_hits10', fil_hits10)
 
             if hyperparams['wandb']: wandb.log(
-                {'fil_mr': fil_mr, 'fil_mrr': fil_mrr, 'fil_hits1': fil_hits1, 'fil_hits3': fil_his3,
+                {'fil_mr': fil_mr, 'fil_mrr': fil_mrr, 'fil_hits1': fil_hits1, 'fil_hits3': fil_hits3,
                  'fil_hits10': fil_hits10, 'raw_hits10': raw_hits10})
 
         model.train()

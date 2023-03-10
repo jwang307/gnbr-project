@@ -99,13 +99,13 @@ if __name__ == '__main__':
             'test': './data/test.tsv',
             'text': ['./data/entity2text.txt', './data/relation2text.txt']
         }
-    elif arg.data == 'fb13':
+    elif arg.data == 'all':
         in_paths = {
             'dataset': arg.data,
-            'train': './sample_lmke_data/FB13/train.tsv',
-            'valid': './sample_lmke_data/FB13/dev.tsv',
-            'test': './sample_lmke_data/FB13/test.tsv',
-            'text': ['./sample_lmke_data/FB13/entity2text.txt', './sample_lmke_data/FB13/relation2text.txt']
+            'train': './all_treatments/train.tsv',
+            'valid': './all_treatments/dev.tsv',
+            'test': './all_treatments/test.tsv',
+            'text': ['./all_treatments/entity2text.txt', './all_treatments/relation2text.txt']
         }
     elif arg.data == 'umls':
         in_paths = {
