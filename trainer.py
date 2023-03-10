@@ -265,6 +265,8 @@ class Trainer:
 
                         bce_loss = []
                         preds_list = []
+                        # torch.cuda.empty_cache()
+                        # print(torch.cuda.memory_summary(device=None, abbreviated=False))
 
                         if not hyperparams['no_use_lm']:
                             if hyperparams['contrastive']:
