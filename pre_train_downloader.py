@@ -9,7 +9,7 @@ import tqdm
 ftp = FTP('ftp.ncbi.nlm.nih.gov', timeout=300)
 ftp.login()
 
-i = 0
+i = 7856571
 
 # Change to the target directory
 ftp.cwd("/pubmed/baseline/")
@@ -17,7 +17,7 @@ ftp.cwd("/pubmed/baseline/")
 # Get a list of all the tar files in the directory
 tar_files = [file for file in ftp.nlst() if file.endswith('.xml.gz')]
 
-for file in tqdm.tqdm(tar_files):
+for file in tqdm.tqdm(tar_files[393:]):
     with open("temp.xml.gz", 'wb') as f:
         ftp.retrbinary('RETR {}'.format(file), f.write)
 
