@@ -3,10 +3,10 @@ from transformers import BertTokenizerFast
 
 # repositor id for saving the tokenizer
 tokenizer_id="biobert-tiny"
-# 20619956
+
 # create a python generator to dynamically load the data
 def batch_iterator(batch_size=10000):
-    for i in tqdm(range(0, 10000, batch_size)):
+    for i in tqdm(range(0, 20619956, batch_size)):
         temp = []
         for x in range(0, 10000):
             with open(f"./abstracts_v2/{i+x}.txt", "r") as text_file:
