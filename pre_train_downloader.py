@@ -11,7 +11,7 @@ ftp = FTP('ftp.ncbi.nlm.nih.gov', timeout=300)
 ftp.login()
 
 directories = [
-    "/pub/pmc/oa_bulk/oa_comm/xml/",
+    # "/pub/pmc/oa_bulk/oa_comm/xml/",
     "/pub/pmc/oa_bulk/oa_noncomm/xml/",
     "/pub/pmc/oa_bulk/oa_other/xml/",
 ]
@@ -23,7 +23,7 @@ def extract_text(elem):
         elem_text += extract_text(child)
     return elem_text
 
-i = 0
+i = 195628
 
 for directory in directories:
     # Change to the target directory
