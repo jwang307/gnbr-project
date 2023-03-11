@@ -18,3 +18,4 @@ tokenizer = BertTokenizerFast.from_pretrained("bert-base-uncased")
 
 bert_tokenizer = tokenizer.train_new_from_iterator(text_iterator=batch_iterator(), vocab_size=32_000)
 bert_tokenizer.save_pretrained("tokenizer")
+bert_tokenizer.push_to_hub(tokenizer_id)
