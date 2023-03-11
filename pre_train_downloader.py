@@ -12,7 +12,7 @@ ftp.login()
 
 directories = [
     # "/pub/pmc/oa_bulk/oa_comm/xml/",
-    "/pub/pmc/oa_bulk/oa_noncomm/xml/",
+    # "/pub/pmc/oa_bulk/oa_noncomm/xml/",
     "/pub/pmc/oa_bulk/oa_other/xml/",
 ]
 
