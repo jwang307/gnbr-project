@@ -7,7 +7,7 @@ from ftplib import FTP
 import tqdm
 
 # Set up the FTP connection
-ftp = FTP('ftp.ncbi.nlm.nih.gov')
+ftp = FTP('ftp.ncbi.nlm.nih.gov', timeout=300)
 ftp.login()
 
 directories = [
@@ -34,8 +34,11 @@ for directory in directories:
 
     # Download each tar file to the local directory
     for file in tqdm.tqdm(tar_files):
-        with open("temp.tar.gz", 'wb') as f:
-            ftp.retrbinary('RETR {}'.format(file), f.write)
+        try:
+            with open("temp.tar.gz", 'wb') as f:
+                ftp.retrbinary('RETR {}'.format(file), f.write)
+        except:
+            continue
 
         with tarfile.open('temp.tar.gz', 'r:gz') as tar:
             tar.extractall(path='temp')
@@ -61,10 +64,11 @@ for directory in directories:
                         elem_text = extract_text(elem)
                         abstract += elem_text
 
-                    with open(f"./abstracts/{i}.txt", "w") as text_file:
-                        text_file.write(abstract)
-            
-                i += 1
+                    if len(abstract) > 0:
+                        with open(f"./abstracts/{i}.txt", "w") as text_file:
+                            text_file.write(abstract)
+                        
+                        i += 1
 
         # Delete the temporary directory
         os.system('rm -rf temp')
