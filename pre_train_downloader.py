@@ -1,6 +1,5 @@
+import gzip
 import os
-import re
-import tarfile
 import xml.etree.ElementTree as ET
 from ftplib import FTP
 
@@ -10,70 +9,35 @@ import tqdm
 ftp = FTP('ftp.ncbi.nlm.nih.gov', timeout=300)
 ftp.login()
 
-directories = [
-    # "/pub/pmc/oa_bulk/oa_comm/xml/",
-    # "/pub/pmc/oa_bulk/oa_noncomm/xml/",
-    "/pub/pmc/oa_bulk/oa_other/xml/",
-]
+i = 0
 
-# Define a recursive function to extract text from the tag and all its child elements and subchildren at any depth
-def extract_text(elem):
-    elem_text = elem.text.strip() if elem.text else ''
-    for child in elem:
-        elem_text += extract_text(child)
-    return elem_text
+# Change to the target directory
+ftp.cwd("/pubmed/baseline/")
 
-i = 195628
+# Get a list of all the tar files in the directory
+tar_files = [file for file in ftp.nlst() if file.endswith('.xml.gz')]
 
-for directory in directories:
-    # Change to the target directory
-    ftp.cwd(directory)
+for file in tqdm.tqdm(tar_files):
+    with open("temp.xml.gz", 'wb') as f:
+        ftp.retrbinary('RETR {}'.format(file), f.write)
 
-    # Get a list of all the tar files in the directory
-    tar_files = [file for file in ftp.nlst() if file.endswith('.tar.gz')]
+    with gzip.open("temp.xml.gz", 'rb') as f:
+        file_contents = f.read()
 
-    # Download each tar file to the local directory
-    for file in tqdm.tqdm(tar_files):
-        try:
-            with open("temp.tar.gz", 'wb') as f:
-                ftp.retrbinary('RETR {}'.format(file), f.write)
-        except:
-            continue
+    # Write the uncompressed contents to a new file
+    with open("temp.xml", 'wb') as f:
+        f.write(file_contents)
 
-        with tarfile.open('temp.tar.gz', 'r:gz') as tar:
-            tar.extractall(path='temp')
+    tree = ET.parse("temp.xml")
+    root = tree.getroot()
+    tag_name = 'AbstractText'
 
-        for subdir, dirs, files in os.walk("./temp"):
-            for file in files:
-                # Check if the file has a .txt extension
-                if file.endswith('.xml'):
-                    # Open the file and read its contents
-                    file_path = os.path.join(subdir, file)
+    for elem in root.iter(tag_name):
+        if elem.text:
+            with open(f"./abstracts_v2/{i}.txt", "w") as text_file:
+                text_file.write(elem.text)
 
-                    tree = ET.parse(file_path)
-                    # Get the root element of the XML document
-                    root = tree.getroot()
+            i += 1
 
-                    # Define the tag name that you want to extract text from
-                    tag_name = 'abstract'
-
-                    # Loop through all elements in the XML document with the specified tag and extract text using the recursive function
-                    abstract = ""
-
-                    for elem in root.iter(tag_name):
-                        elem_text = extract_text(elem)
-                        abstract += elem_text
-
-                    if len(abstract) > 0:
-                        with open(f"./abstracts/{i}.txt", "w") as text_file:
-                            text_file.write(abstract)
-                        
-                        i += 1
-
-        # Delete the temporary directory
-        os.system('rm -rf temp')
-        # Delete the temporary tar file
-        os.system('rm temp.tar.gz')
-
-# Close the FTP connection
-ftp.quit()
+    os.system('rm temp.xml')
+    os.system('rm temp.xml.gz')
