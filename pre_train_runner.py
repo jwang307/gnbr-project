@@ -1,6 +1,7 @@
 from datasets import load_dataset
 from transformers import (
     AutoModel,
+    AutoModelForMaskedLM,
     AutoTokenizer,
     DataCollatorForLanguageModeling,
     Trainer,
@@ -17,7 +18,7 @@ data_collator = DataCollatorForLanguageModeling(
 dataset = load_dataset("yashpatil/processed_bio_bert_tiny_dataset")
 
 # Define the BERT Tiny model
-model = AutoModel.from_pretrained("prajjwal1/bert-tiny")
+model = AutoModelForMaskedLM.from_pretrained("prajjwal1/bert-tiny")
 
 # Define the training arguments
 training_args = TrainingArguments(output_dir="./biobert_tiny_results")
