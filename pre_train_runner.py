@@ -9,8 +9,14 @@ from transformers import (
     TrainingArguments,
 )
 
+tokenizer = AutoTokenizer.from_pretrained("tokenizer")
+
+data_collator = DataCollatorForLanguageModeling(
+    tokenizer=tokenizer, mlm=True, mlm_probability=0.15
+)
+
 # Define the dataset
-dataset = load_dataset("yashpatil/processed_bio_bert_tiny_dataset", split="train[0:1]")
+dataset = load_dataset("yashpatil/processed_bio_bert_tiny_dataset")
 
 # Define the BERT Tiny model
 model = BertForPreTraining.from_pretrained("prajjwal1/bert-tiny")
@@ -22,7 +28,9 @@ training_args = TrainingArguments(output_dir="./biobert_tiny_results")
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=dataset
+    train_dataset=dataset['train'],
+    data_collator=data_collator,
+    tokenizer=tokenizer
 )
 
 # Start the training process
