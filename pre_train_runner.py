@@ -18,14 +18,11 @@ model = BertForPreTraining.from_pretrained("prajjwal1/bert-tiny")
 # Define the training arguments
 training_args = TrainingArguments(output_dir="./biobert_tiny_results")
 
-device = "cpu"
-model.to(device)
-
 # Define the trainer
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=dataset['train']
+    train_dataset=dataset['train'][:1]
 )
 
 # Start the training process
