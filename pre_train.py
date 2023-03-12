@@ -11,24 +11,15 @@ from transformers import AutoTokenizer
 
 user_id = HfApi().whoami()["name"]
 
-data_dir = "./abstracts_v2"
+def gen():
+    for i in tqdm(range(20619956)):
+        try:
+            with open(f"./abstracts_v2/{i}.txt", "r") as text_file:
+                yield {"text": text_file.read()}
+        except:
+            pass
 
-# Get a list of all the txt files in the directory
-file_paths = [str(file_path) for file_path in Path(data_dir).glob("*.txt")]
-
-# Define a function to read each txt file and return its contents
-def read_txt_file(file_path):
-    with open(file_path, "r", encoding="utf-8") as f:
-        return f.read()
-
-# Use the `datasets.Dataset.from_generator()` method to load the txt files into a Hugging Face dataset
-raw_datasets = datasets.Dataset.from_generator(
-    generator=lambda: (read_txt_file(file_path) for file_path in tqdm.tqdm(file_paths)),
-    output_types={"text": datasets.Value("string")},
-    # Set the number of elements in the dataset to the number of txt files in the directory
-    # to avoid unnecessary memory allocation
-    num_rows=len(file_paths),
-)
+ds = datasets.Dataset.from_generator(gen)
 
 # tokenizer = AutoTokenizer.from_pretrained(f"{user_id}/{tokenizer_id}")
 tokenizer = AutoTokenizer.from_pretrained("tokenizer")
