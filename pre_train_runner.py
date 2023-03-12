@@ -23,7 +23,21 @@ model = AutoModelForMaskedLM.from_pretrained("prajjwal1/bert-tiny")
 model.resize_token_embeddings(len(tokenizer))
 
 # Define the training arguments
-training_args = TrainingArguments(output_dir="./biobert_tiny_results")
+training_args = TrainingArguments(
+    output_dir="./biobert_tiny_results",
+    evaluation_strategy="steps",
+    eval_steps=5000,
+    save_steps=5000,
+    num_train_epochs=10,
+    per_device_train_batch_size=32,
+    per_device_eval_batch_size=32,
+    learning_rate=5e-5,
+    warmup_steps=10000,
+    weight_decay=0.01,
+    logging_dir="./logs",
+    logging_steps=500,
+    load_best_model_at_end=True,
+)
 
 # Define the trainer
 trainer = Trainer(
