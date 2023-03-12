@@ -22,7 +22,7 @@ training_args = TrainingArguments(output_dir="./biobert_tiny_results")
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=dataset['train']
+    train_dataset=dataset
 )
 
 # Start the training process
