@@ -4,8 +4,8 @@ import os
 from itertools import chain
 from pathlib import Path
 
+import datasets
 import tqdm
-from datasets
 from huggingface_hub import HfApi
 from transformers import AutoTokenizer
 
