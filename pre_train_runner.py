@@ -20,6 +20,8 @@ dataset = load_dataset("yashpatil/processed_bio_bert_tiny_dataset")
 # Define the BERT Tiny model
 model = AutoModelForMaskedLM.from_pretrained("prajjwal1/bert-tiny")
 
+model.resize_token_embeddings(len(tokenizer))
+
 # Define the training arguments
 training_args = TrainingArguments(output_dir="./biobert_tiny_results")
 
