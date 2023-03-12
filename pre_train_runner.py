@@ -10,7 +10,7 @@ from transformers import (
 )
 
 # Define the dataset
-dataset = load_dataset("yashpatil/processed_bio_bert_tiny_dataset")
+dataset = load_dataset("yashpatil/processed_bio_bert_tiny_dataset", split="train[0:1]")
 
 # Define the BERT Tiny model
 model = BertForPreTraining.from_pretrained("prajjwal1/bert-tiny")
@@ -22,7 +22,7 @@ training_args = TrainingArguments(output_dir="./biobert_tiny_results")
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=dataset['train'][:1]
+    train_dataset=dataset['train']
 )
 
 # Start the training process
