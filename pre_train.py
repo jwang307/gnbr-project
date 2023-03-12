@@ -12,14 +12,14 @@ from transformers import AutoTokenizer
 user_id = HfApi().whoami()["name"]
 
 def gen():
-    for i in tqdm(range(20619956)):
+    for i in tqdm.tqdm(range(20619956)):
         try:
             with open(f"./abstracts_v2/{i}.txt", "r") as text_file:
                 yield {"text": text_file.read()}
         except:
             pass
 
-ds = datasets.Dataset.from_generator(gen)
+raw_datasets = datasets.Dataset.from_generator(gen)
 
 # tokenizer = AutoTokenizer.from_pretrained(f"{user_id}/{tokenizer_id}")
 tokenizer = AutoTokenizer.from_pretrained("tokenizer")
