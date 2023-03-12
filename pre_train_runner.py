@@ -45,8 +45,7 @@ trainer = Trainer(
     model=model,
     args=training_args,
     data_collator=data_collator,
-    train_dataset=dataset,
-    prediction_loss_only=True,
+    train_dataset=dataset
 )
 
 # Start the training process
