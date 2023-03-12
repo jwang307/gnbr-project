@@ -2,31 +2,33 @@ import glob
 import multiprocessing
 import os
 from itertools import chain
+from pathlib import Path
 
 import tqdm
-from datasets import Dataset
+from datasets
 from huggingface_hub import HfApi
 from transformers import AutoTokenizer
 
 user_id = HfApi().whoami()["name"]
 
+data_dir = "./abstracts_v2"
 
-# specify the directory containing the files
-directory = "./abstracts_v2"
+# Get a list of all the txt files in the directory
+file_paths = [str(file_path) for file_path in Path(data_dir).glob("*.txt")]
 
-# create an empty list to store the contents of each file
-file_contents = []
+# Define a function to read each txt file and return its contents
+def read_txt_file(file_path):
+    with open(file_path, "r", encoding="utf-8") as f:
+        return f.read()
 
-# use the glob module to find all files in the directory
-files = glob.glob(os.path.join(directory, "*"))
-
-# loop over each file and read its contents
-for file in tqdm.tqdm(files):
-    with open(file, "r") as f:
-        content = f.read()
-        file_contents.append({ "text": content })
-
-raw_datasets = Dataset.from_list(file_contents)
+# Use the `datasets.Dataset.from_generator()` method to load the txt files into a Hugging Face dataset
+raw_datasets = datasets.Dataset.from_generator(
+    generator=lambda: (read_txt_file(file_path) for file_path in tqdm.tqdm(file_paths)),
+    output_types={"text": datasets.Value("string")},
+    # Set the number of elements in the dataset to the number of txt files in the directory
+    # to avoid unnecessary memory allocation
+    num_rows=len(file_paths),
+)
 
 # tokenizer = AutoTokenizer.from_pretrained(f"{user_id}/{tokenizer_id}")
 tokenizer = AutoTokenizer.from_pretrained("tokenizer")
