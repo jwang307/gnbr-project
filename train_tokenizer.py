@@ -9,8 +9,11 @@ def batch_iterator(batch_size=10000):
     for i in tqdm(range(0, 20619956, batch_size)):
         temp = []
         for x in range(0, 10000):
-            with open(f"./abstracts_v2/{i+x}.txt", "r") as text_file:
-                temp.append(text_file.read())
+            try:
+                with open(f"./abstracts_v2/{i+x}.txt", "r") as text_file:
+                    temp.append(text_file.read())
+            except:
+                pass
         yield temp
 
 # create a tokenizer from existing one to re-use special tokens
