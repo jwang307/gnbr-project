@@ -11,6 +11,6 @@ cached_model/*
 sampler/*
 openke/*
 complete_dataset/*
-legacy/data/*
 abstracts/*
 abstracts_v2/*
+data/*
