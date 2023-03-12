@@ -15,11 +15,6 @@ tokenizer = AutoTokenizer.from_pretrained("tokenizer")
 # Define the dataset
 dataset = load_dataset("yashpatil/processed_bio_bert_tiny_dataset")
 
-# Define the data collator
-data_collator = DataCollatorForLanguageModeling(
-    tokenizer=tokenizer, mlm=True, mlm_probability=0.15
-)
-
 # Define the BERT Tiny model
 model = BertForPreTraining.from_pretrained("prajjwal1/bert-tiny")
 
@@ -44,8 +39,8 @@ training_args = TrainingArguments(
 trainer = Trainer(
     model=model,
     args=training_args,
-    data_collator=data_collator,
-    train_dataset=dataset['train'],
+    tokenizer=tokenizer,
+    train_dataset=dataset['train']
 )
 
 # Start the training process
