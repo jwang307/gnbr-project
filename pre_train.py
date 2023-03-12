@@ -1,6 +1,8 @@
 import glob
 import os
 
+import tqdm
+
 # specify the directory containing the files
 directory = "./abstracts_v2"
 
@@ -11,7 +13,7 @@ file_contents = []
 files = glob.glob(os.path.join(directory, "*"))
 
 # loop over each file and read its contents
-for file in files:
+for file in tqdm.tqdm(files):
     with open(file, "r") as f:
         content = f.read()
         file_contents.append(content)
