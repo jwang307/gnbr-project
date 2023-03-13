@@ -15,7 +15,8 @@ data_collator = DataCollatorForLanguageModeling(
 )
 
 # Define the dataset
-dataset = load_dataset("yashpatil/processed_bio_bert_tiny_dataset")
+train_dataset = load_dataset("yashpatil/processed_bio_bert_tiny_dataset", split='train[:80%]')
+eval_dataset = load_dataset("yashpatil/processed_bio_bert_tiny_dataset", split='train[80%:]')
 
 # Define the BERT Tiny model
 model = AutoModelForMaskedLM.from_pretrained("prajjwal1/bert-tiny")
@@ -43,7 +44,8 @@ training_args = TrainingArguments(
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=dataset['train'],
+    train_dataset=train_dataset,
+    eval_dataset=eval_dataset,
     data_collator=data_collator,
     tokenizer=tokenizer
 )
