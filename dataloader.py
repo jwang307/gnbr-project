@@ -15,7 +15,7 @@ count_sampler = 0
 
 class DataSampler(object):
     def __init__(self, datasetName, mode, pos_dataset, whole_dataset, batch_size, entity_set, relation_set, neg_rate,
-                 groundtruth=None, possible_entities=None, rdrop=False, pos_neg_dataset=None):
+                 uncertainty, groundtruth=None, possible_entities=None, rdrop=False, pos_neg_dataset=None):
         self.datasetName = datasetName
 
         self.batch_size = batch_size
@@ -25,6 +25,7 @@ class DataSampler(object):
         self.mode = mode
         self.whole_dataset = whole_dataset
         self.pos_neg_dataset = pos_neg_dataset  # dataset with originally provided negative samples
+        self.uncertainty = uncertainty
 
         self.neg_rate = neg_rate
         self.groundtruth = groundtruth
@@ -50,7 +51,10 @@ class DataSampler(object):
                 with open(dataset_path, 'rb') as fil:
                     self.dataset = pickle.load(fil)
             else:
-                self.dataset = self.create_dataset(pos_dataset)
+                if uncertainty and pos_neg_dataset is not None:
+                    self.dataset = self.create_dataset(pos_neg_dataset)
+                else:
+                    self.dataset = self.create_dataset(pos_dataset)
                 with open(dataset_path, 'wb') as fil:
                     pickle.dump(self.dataset, fil)
 
@@ -60,6 +64,7 @@ class DataSampler(object):
         assert (batch_size % (1 + neg_rate) == 0)
 
     def create_dataset(self, pos_dataset):
+        uncertainty = self.uncertainty
         dataset = []
         random.shuffle(pos_dataset)
         pos_dataset_set = set(pos_dataset)
@@ -79,10 +84,15 @@ class DataSampler(object):
             viewable_set = whole_dataset_set
 
         for triple in tqdm(pos_dataset):
-            dataset.append((triple, 1))
+            if uncertainty and mode == 'train':
+                dataset.append((triple[:-1], triple[-1]))
+                h, r, t, l = triple
+            else:
+                dataset.append((triple, 1))
+                h, r, t, _ = triple
+
             choice = random_choose(random_ratio, constrain_ratio, reverse_ratio)
 
-            h, r, t = triple
             for _ in range(self.neg_rate):
                 count = 0
                 while (True):
@@ -102,6 +112,7 @@ class DataSampler(object):
                             neg_triple = (replace_ent, r, t)
                         else:  # choice == 'reverse'
                             neg_triple = (t, r, h)
+
                     else:
                         # replace tail
                         if choice == 'random':
@@ -119,11 +130,18 @@ class DataSampler(object):
                         else:  # choice == 'reverse':
                             neg_triple = (t, r, h)
 
-                    if neg_triple not in viewable_set:
-                        dataset.append((neg_triple, 0))
-                        break
-                    elif choice == 'reverse':
-                        dataset.append((neg_triple, 1))
+                    if uncertainty and mode == 'train':
+                        if neg_triple not in viewable_set:
+                            dataset.append((neg_triple, 0))
+                            break
+                        elif choice == 'reverse':
+                            dataset.append((neg_triple, l))
+                    else:
+                        if neg_triple not in viewable_set:
+                            dataset.append((neg_triple, 0))
+                            break
+                        elif choice == 'reverse':
+                            dataset.append((neg_triple, 1))
 
         return dataset
 
@@ -150,21 +168,23 @@ class DataSampler(object):
 
 class DataLoader(object):
     def __init__(self, in_paths, tokenizer, batch_size=16, neg_rate=1, add_tokens=False, p_tuning=False, rdrop=False,
-                 model='bert', descriptions=False):
+                 model='bert', descriptions=False, uncertainty=False):
 
         self.datasetName = in_paths['dataset']
-
-        self.train_set = self.load_dataset(in_paths['train'])
-        if self.datasetName not in ['fb13']:
+        self.uncertainty = uncertainty
+        if not self.uncertainty:
+            self.train_set = self.load_dataset(in_paths['train'])
             self.valid_set = self.load_dataset(in_paths['valid'])
             self.test_set = self.load_dataset(in_paths['test'])
             self.valid_set_with_neg = None
             self.test_set_with_neg = None
+            self.whole_set = self.train_set + self.valid_set + self.test_set
+
         else:
+            self.train_set, self.train_set_with_neg = self.load_dataset_with_neg(in_paths['train'])
             self.valid_set, self.valid_set_with_neg = self.load_dataset_with_neg(in_paths['valid'])
             self.test_set, self.test_set_with_neg = self.load_dataset_with_neg(in_paths['test'])
-
-        self.whole_set = self.train_set + self.valid_set + self.test_set
+            self.whole_set = self.train_set_with_neg + self.valid_set_with_neg + self.test_set_with_neg
 
         self.uid2text = {}
         self.uid2tokens = {}
@@ -225,11 +245,11 @@ class DataLoader(object):
         with open(in_path, 'r', encoding='utf8') as fil:
             for line in fil.readlines():
                 h, r, t, l = line.strip('\n').split('\t')
-
-                if l == '-1':
-                    l = 0
-                else:
-                    l = 1
+                l = float(l)
+                # if l == '-1':
+                #     l = 0
+                # else:
+                #     l = 1
                 dataset.append((h, r, t))
                 dataset_with_neg.append((h, r, t, l))
         return dataset, dataset_with_neg
@@ -420,24 +440,24 @@ class DataLoader(object):
 
         return batch_tokens, batch_positions
 
-    def train_data_sampler(self):
+    def train_data_sampler(self, uncertainty):
         return DataSampler(datasetName=self.datasetName, mode='train', pos_dataset=self.train_set,
                            whole_dataset=self.whole_set, batch_size=self.batch_size,
                            entity_set=self.train_entity_set, relation_set=self.train_relation_set,
                            neg_rate=self.neg_rate, groundtruth=self.groundtruth,
-                           possible_entities=self.possible_entities, rdrop=self.rdrop)
+                           possible_entities=self.possible_entities, rdrop=self.rdrop, uncertainty=uncertainty)
 
-    def valid_data_sampler(self, batch_size, neg_rate):
+    def valid_data_sampler(self, batch_size, neg_rate, uncertainty):
         return DataSampler(datasetName=self.datasetName, mode='valid', pos_dataset=self.valid_set,
                            whole_dataset=self.whole_set, batch_size=batch_size,
                            entity_set=self.entity_set, relation_set=self.relation_set, neg_rate=neg_rate,
-                           groundtruth=self.groundtruth, pos_neg_dataset=self.valid_set_with_neg)
+                           groundtruth=self.groundtruth, pos_neg_dataset=self.valid_set_with_neg, uncertainty=uncertainty)
 
-    def test_data_sampler(self, batch_size, neg_rate):
+    def test_data_sampler(self, batch_size, neg_rate, uncertainty):
         return DataSampler(datasetName=self.datasetName, mode='test', pos_dataset=self.test_set,
                            whole_dataset=self.whole_set, batch_size=batch_size,
                            entity_set=self.entity_set, relation_set=self.relation_set, neg_rate=neg_rate,
-                           groundtruth=self.groundtruth, pos_neg_dataset=self.test_set_with_neg)
+                           groundtruth=self.groundtruth, pos_neg_dataset=self.test_set_with_neg, uncertainty=uncertainty)
 
     def get_dataset_size(self, split='train'):
         if split == 'train':

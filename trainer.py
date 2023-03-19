@@ -1,7 +1,7 @@
 import pandas as pd
 import torch
 import torch.nn.functional as F
-from tqdm import tqdm
+from tqdm.auto import tqdm
 import pdb
 import random
 import time
@@ -37,10 +37,20 @@ class Trainer:
         if not os.path.exists(self.predictions):
             os.mkdir(self.predictions)
 
+        self.uncertainty = hyperparams['uncertainty']
+
         model.to(device)
 
         self.result_log = self.save_folder + self.identifier + '.txt'
-        self.param_path_template = self.save_folder + self.identifier + '-epc_{0}_metric_{1}' + '.pt'
+
+        if hyperparams['task'] == 'TC' or hyperparams['evaluate_tc']:
+            if not os.path.exists(os.path.join(self.save_folder, 'tc')):
+                os.makedirs(os.path.join(self.save_folder, 'tc'))
+            self.param_path_template = self.save_folder + 'tc/' + self.identifier + '-epc_{0}_metric_{1}' + '.pt'
+        else:
+            if not os.path.exists(os.path.join(self.save_folder, 'lp')):
+                os.makedirs(os.path.join(self.save_folder, 'lp'))
+            self.param_path_template = self.save_folder + 'lp/' + self.identifier + '-epc_{0}_metric_{1}' + '.pt'
         self.history_path = self.save_folder + self.identifier + '-history_{0}' + '.pkl'
 
         self.best_metric = {'acc': 0, 'f1': 0,
@@ -97,6 +107,7 @@ class Trainer:
         batch_size = hyperparams['batch_size']
         epoch = hyperparams['epoch']
         neg_rate = hyperparams['neg_rate']
+        uncertainty = self.uncertainty
 
         data_loader = self.data_loader
         ent2id = data_loader.ent2id
@@ -150,13 +161,14 @@ class Trainer:
 
             time_begin = time.time()
 
-            data_sampler = data_loader.train_data_sampler()
+            data_sampler = data_loader.train_data_sampler(uncertainty=uncertainty)
             n_batch = len(data_sampler)
             dataset_size = data_sampler.get_dataset_size()
 
             real_dataset_size = dataset_size / (1 + neg_rate)
 
-            for i_b, batch in tqdm(enumerate(data_sampler), total=n_batch):
+            # for i_b, batch in tqdm(enumerate(data_sampler), total=n_batch):
+            for i_b, batch in enumerate(data_sampler):
                 triples = [i[0] for i in batch]
                 triple_degrees = [[degrees[e] for e in triple] for triple in triples]
                 batch_size_ = len(batch)
@@ -401,6 +413,7 @@ class Trainer:
 
         batch_size = 256
         neg_rate = 1
+        uncertainty = self.uncertainty
 
         data_loader = self.data_loader
         ent2id = data_loader.ent2id
@@ -420,14 +433,14 @@ class Trainer:
             time_begin = time.time()
 
             if split == 'valid':
-                data_sampler = data_loader.valid_data_sampler(batch_size=batch_size, neg_rate=neg_rate)
+                data_sampler = data_loader.valid_data_sampler(batch_size=batch_size, neg_rate=neg_rate, uncertainty=uncertainty)
             else:
-                data_sampler = data_loader.test_data_sampler(batch_size=batch_size, neg_rate=neg_rate)
+                data_sampler = data_loader.test_data_sampler(batch_size=batch_size, neg_rate=neg_rate, uncertainty=uncertainty)
 
             n_batch = len(data_sampler)
             dataset_size = data_sampler.get_dataset_size()
 
-            record = {'preds': [], 'labels': []}
+            record = {'preds': [], 'labels': [], 'pred_labels': []}
 
             for i_b, batch in tqdm(enumerate(data_sampler), total=n_batch):
                 triples = [i[0] for i in batch]
@@ -459,9 +472,11 @@ class Trainer:
                         total_accuracy += (pred_labels == labels).int().sum().item()
 
                         # for saving
+                        preds = list(preds.cpu().numpy())
                         pred_labels = list(pred_labels.cpu().numpy())
                         labels = list(labels.cpu().numpy())
-                        record['preds'] += pred_labels
+                        record['pred_labels'] += pred_labels
+                        record['preds'] += preds
                         record['labels'] += labels
 
                         total_loss_triple_classification += loss.item() * batch_size_
@@ -480,7 +495,7 @@ class Trainer:
             if split != 'test':
                 self.save_model(epc, 'acc', avg_accuracy)
             else:
-                print(record)
+                # print(record)
                 pd.DataFrame.from_dict(record).to_csv(self.predictions + self.identifier + '-predictions.csv',
                                                       index=False)
 
@@ -491,6 +506,7 @@ class Trainer:
         device = self.device
         hyperparams = self.hyperparams
         data_loader = self.data_loader
+        uncertainty = self.uncertainty
 
         n_ent = model.n_ent
         n_rel = model.n_rel
@@ -824,13 +840,14 @@ class Trainer:
         save_path = self.param_path_template.format(epc, metric)
         last_path = self.param_path_template.format(self.best_epoch[metric], metric)
 
-        if self.update_metric(epc, metric, metric_val):
-            if os.path.exists(last_path) and save_path != last_path and epc >= self.best_epoch[metric]:
-                os.remove(last_path)
-                print('Last parameters {} deleted'.format(last_path))
+        # if self.update_metric(epc, metric, metric_val):
+        # temp test
+        if os.path.exists(last_path) and save_path != last_path and epc >= self.best_epoch[metric]:
+            os.remove(last_path)
+            print('Last parameters {} deleted'.format(last_path))
 
-            torch.save(self.model.state_dict(), save_path)
-            print('Parameters saved into ', save_path)
+        torch.save(self.model.state_dict(), save_path)
+        print('Parameters saved into ', save_path)
 
     def debug_signal_handler(self, signal, frame):
         pdb.set_trace()

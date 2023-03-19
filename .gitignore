@@ -14,3 +14,6 @@ complete_dataset/*
 abstracts/*
 abstracts_v2/*
 data/*
+jobs/*
+formatted/*
+*.sbatch

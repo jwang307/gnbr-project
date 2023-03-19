@@ -36,8 +36,8 @@ if __name__ == '__main__':
     parser.add_argument('--epoch', type=int, default=200)
     parser.add_argument('--weight_decay', type=float, default=1e-7)
 
-    parser.add_argument('--data', type=str, default='chemical-disease')
-    parser.add_argument('--plm', type=str, default='tiny', choices=['bert', 'biobert', 'tiny'])
+    parser.add_argument('--data', type=str, default='rare-disease')
+    parser.add_argument('--plm', type=str, default='biobert', choices=['tiny', 'biobert', 'tiny-squared', 'biobert-tiny'])
     parser.add_argument('--description', type=str, default='desc')
 
     parser.add_argument('--load_path', type=str, default=None)
@@ -63,6 +63,7 @@ if __name__ == '__main__':
     parser.add_argument('--load_descriptions', default=False, action='store_true')
     parser.add_argument('--predictions', type=str, default='./predictions/')
     parser.add_argument('--task', default='LP', choices=['LP', 'TC'])
+    parser.add_argument('--uncertainty', default=False, action='store_true')
 
     arg = parser.parse_args()
 
@@ -71,9 +72,12 @@ if __name__ == '__main__':
     else:
         neg_rate = 0
 
-    identifier = '{}-{}-{}-batch_size={}-prefix_tuning={}'.format(arg.data, arg.plm, arg.description, arg.batch_size,
-                                                                  arg.prefix_tuning)
+    identifier = '{}-u={}-b={}-d={}'.format(arg.plm, arg.uncertainty, arg.batch_size, arg.load_descriptions)
+    # identifier = '{}-{}-{}-batch_size={}-descriptions={}'.format(arg.data, arg.plm, arg.description, arg.batch_size,
+    #                                                               arg.load_descriptions)
 
+    # identifier = '{}-{}-{}-batch_size={}-prefix_tuning={}'.format(arg.data, arg.plm, arg.description, arg.batch_size,
+    #                                                               arg.p_tuning)
     # Set random seed
     random.seed(arg.seed)
     np.random.seed(arg.seed)
@@ -85,63 +89,60 @@ if __name__ == '__main__':
         plm_name = "bert-base-uncased"
         t_model = 'bert'
     elif arg.plm == 'biobert':
-        plm_name = "dmis-lab/biobert-v1.1"
+        plm_name = './cached_model/biobert/' # "dmis-lab/biobert-v1.1"
         t_model = 'bert'
     elif arg.plm == 'tiny':
-        plm_name = "prajjwal1/bert-tiny"
+        plm_name = "./cached_model/bert-tiny/"
+        t_model = 'bert'
+    elif arg.plm == 'biobert-tiny':
+        plm_name = './cached_model/biobert-tiny/'
+        t_model = 'bert'
+    elif arg.plm == 'tiny-squared':
+        plm_name = './cached_model/biobert-tiny-squared/'
         t_model = 'bert'
 
-    if arg.data == 'chemical-gene':
-        in_paths = {
-            'dataset': arg.data,
-            'train': './data/train.tsv',
-            'valid': './data/dev.tsv',
-            'test': './data/test.tsv',
-            'text': ['./data/entity2text.txt', './data/relation2text.txt']
-        }
-    elif arg.data == 'all':
-        in_paths = {
-            'dataset': arg.data,
-            'train': './all_treatments/train.tsv',
-            'valid': './all_treatments/dev.tsv',
-            'test': './all_treatments/test.tsv',
-            'text': ['./all_treatments/entity2text.txt', './all_treatments/relation2text.txt']
-        }
-    elif arg.data == 'umls':
-        in_paths = {
-            'dataset': arg.data,
-            'train': './sample_lmke_data/umls/train.tsv',
-            'valid': './sample_lmke_data/umls/dev.tsv',
-            'test': './sample_lmke_data/umls/test.tsv',
-            'text': ['./sample_lmke_data/umls/entity2textlong.txt', './sample_lmke_data/umls/relation2text.txt']
-        }
-    elif arg.data == 'fb15k-237':
-        in_paths = {
-            'dataset': arg.data,
-            'train': './sample_lmke_data/fb15k-237/train.tsv',
-            'valid': './sample_lmke_data/fb15k-237/dev.tsv',
-            'test': './sample_lmke_data/fb15k-237/test.tsv',
-            'text': ['./sample_lmke_data/fb15k-237/FB15k_mid2description.txt',
-                     # './sample_lmke_data/fb15k-237/entity2textlong.txt',
-                     './sample_lmke_data/fb15k-237/relation2text.txt']
-        }
-    elif arg.data == 'wn18rr':
-        in_paths = {
-            'dataset': arg.data,
-            'train': './sample_lmke_data/WN18RR/train.tsv',
-            'valid': './sample_lmke_data/WN18RR/dev.tsv',
-            'test': './sample_lmke_data/WN18RR/test.tsv',
-            'text': ['./sample_lmke_data/WN18RR/my_entity2text.txt',
-                     './sample_lmke_data/WN18RR/relation2text.txt']
-        }
+    if not arg.uncertainty:
+        if arg.data == 'chemical-gene':
+            in_paths = {
+                'dataset': arg.data,
+                'train': './legacy/data/train.tsv',
+                'valid': './legacy/data/dev.tsv',
+                'test': './legacy/data/test.tsv',
+                'text': ['./legacy/data/entity2text.txt', './legacy/data/relation2text.txt']
+            }
+        elif arg.data == 'rare-disease':
+            in_paths = {
+                'dataset': arg.data,
+                'train': './data/train.tsv',
+                'valid': './data/dev.tsv',
+                'test': './data/neuroblastoma.tsv',
+                'text': ['./data/entity2text.txt', './data/relation2text.txt']
+            }
+    else:
+        if arg.data == 'rare-disease':
+            in_paths = {
+                'dataset': arg.data,
+                'train': './data/train_scored.tsv',
+                'valid': './data/dev_scored.tsv',
+                'test': './data/test_scored.tsv',
+                'text': ['./data/entity2text.txt', './data/relation2text.txt']
+            }
+    # elif arg.data == 'umls':
+    #     in_paths = {
+    #         'dataset': arg.data,
+    #         'train': './sample_lmke_data/umls/train.tsv',
+    #         'valid': './sample_lmke_data/umls/dev.tsv',
+    #         'test': './sample_lmke_data/umls/test.tsv',
+    #         'text': ['./sample_lmke_data/umls/entity2textlong.txt', './sample_lmke_data/umls/relation2text.txt']
+    #     }
 
-    lm_config = AutoConfig.from_pretrained(plm_name, cache_dir='./cached_model')
-    lm_tokenizer = AutoTokenizer.from_pretrained(plm_name, do_basic_tokenize=False, cache_dir='./cached_model')
-    lm_model = AutoModel.from_pretrained(plm_name, config=lm_config, cache_dir='./cached_model')
+    lm_tokenizer = AutoTokenizer.from_pretrained(plm_name, do_basic_tokenize=False)
+    lm_config = AutoConfig.from_pretrained(plm_name)
+    lm_model = AutoModel.from_pretrained(plm_name, config=lm_config)
 
     data_loader = DataLoader(in_paths, lm_tokenizer, batch_size=arg.batch_size, neg_rate=neg_rate,
                              add_tokens=arg.add_tokens, p_tuning=arg.p_tuning, rdrop=arg.rdrop, model=t_model,
-                             descriptions=arg.load_descriptions)
+                             descriptions=arg.load_descriptions, uncertainty=arg.uncertainty)
 
     if arg.add_tokens:
         data_loader.adding_tokens()
@@ -202,7 +203,9 @@ if __name__ == '__main__':
         'contrastive': arg.contrastive,
         'task': arg.task,
         'wandb': arg.wandb,
-        'predictions': arg.predictions
+        'predictions': arg.predictions,
+        'uncertainty': arg.uncertainty,
+        'evaluate_tc': arg.triple_classification
     }
 
     trainer = Trainer(data_loader, model, lm_tokenizer, optimizer, device, hyperparams)
